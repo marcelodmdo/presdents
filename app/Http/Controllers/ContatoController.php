@@ -14,7 +14,7 @@ class ContatoController extends Controller
         // $order = Order::findOrFail($orderId);
         $data = $request->toArray();
         // Ship order...
-        Mail::to('presidenteclinicadafamilia@gmail.com')->bcc('marcelodmdo@gmail.com')->send(new Contato($data));
+        // Mail::to('presidenteclinicadafamilia@gmail.com')->bcc('marcelodmdo@gmail.com')->send(new Contato($data));
         try {
             return response()->json(['success'], 200);
         } catch(\Exception $e){
