@@ -1,0 +1,953 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #C9322C;
+  color: #fff;
+}
+
+::selection {
+  background-color: #C9322C;
+  color: #fff;
+}
+
+.android-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.android-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.android-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.android-mobile-title {
+  display: none !important;
+  text-align: center !important;
+}
+
+
+.android-logo-image {
+  height: 40px;
+  /* width: 140px; */
+}
+
+
+.android-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .android-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .android-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .android-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .android-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .android-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+  .android-search-box.is-focused + .android-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .android-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .android-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #8bc34a;
+    }
+
+  .android-search-box {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .android-more-button {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+.android-drawer {
+  border-right: none;
+}
+
+  .android-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .android-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .android-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #7CB367;
+  }
+
+  .android-drawer .mdl-layout-title {
+    position: relative;
+    background: #3082C7;
+    height: auto;
+    padding: 50px 10px;
+    text-align: center;
+  }
+
+    .android-drawer .android-logo-image {
+      /* position: absolute;
+      bottom: 16px; */
+    }
+/* 
+.android-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('../images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+} */
+
+.custom-header-section {
+  position: relative;
+  /* height: 74vh; */
+  width: auto;
+  background-color: #ffffff;
+  /* background: url('../images/presdents/slider/foto2.jpeg') center 30% no-repeat; */
+  background-size: cover;
+}
+.content-custom-header-section {
+  padding: 0px 0;
+  width: 100%;
+  max-width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom-header-section .custom-header-style1 {
+  height: 30vh;
+  background-position: center center;
+  background-size: cover;
+}
+.custom-header-section .custom-header-style1 .content-custom-header-section {
+  height: 30vh;
+  padding: 0px 60px;
+  position: relative;
+}
+
+.custom-header-section .custom-header-style1 .content-custom-header-section .content-box {
+  border-radius: 40px 64px 0px 0px ;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+  transition: all 2s ease;
+  opacity: 1;
+  max-height: 330px;
+  padding: 0px 0px 50px 0px;
+  text-align: left;
+}
+.custom-header-section .custom-header-style1 .content-custom-header-section .content-box h4 { 
+  /* border: solid 1px red; */
+  height: 100%;
+  margin: 0;
+  opacity: 1 ;
+  transition: all 2s ease;
+  line-height: 4.0rem;
+  display: inline-block;
+  padding: 20px;
+  font-weight: 200;
+  color: #fff;
+  font-size: 4.0rem;
+  border-radius: 40px 0px 40px 40px;
+}
+
+.content-slider-section {
+  padding: 0px 0;
+  width: 100%;
+  max-width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.send-contato {
+  position: relative;
+}
+.form-response img {
+  width: 100px;
+}
+.form-response p {
+  color: #fff
+}
+.form-response-box.active, .form-response-box.error {
+  opacity: 1;
+}
+/* .form-response-box.error {
+  background-color: #CE382B !important;
+  opacity: 1 !important;
+} */
+.form-response-box.active .form-response {
+  background-color: #428438;
+}
+.form-response-box.error .form-response {
+  background-color: #CE382B !important;
+}
+.form-response {
+  /* border: solid 1px red; */
+  width: 90%;
+  padding: 30px;
+  
+  z-index: 999;
+  border-radius: 50px;
+  text-align: center;
+}
+.error-mess, .success-mess {
+  display: none;
+}
+.form-response-box {
+  display: flex;
+  transition: all 0.2s ease-in-out;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.8;
+  background-color: #000; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+/* .form-overlay {
+  opacity: 0.8;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+} */
+
+.blue-shader {
+  background-color: rgba(58, 135, 199, 0.7);
+}
+.green-shader {
+  background-color: rgba(65, 133, 54, 0.7);
+}
+.red-shader {
+  background-color: rgba(210, 54, 44, 0.7);
+}
+
+.green-shader h4 {
+  background-color: rgba(40, 82, 33, 0.8) ;
+}
+.blue-shader h4 {
+  background-color: rgba(35, 83, 122, 0.8) ;
+}
+.red-shader h4 {
+  background-color: rgba(133, 34, 27, 0.8) ;
+}
+
+
+.android-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.android-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.android-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.android-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .android-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+
+
+.android-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.android-screen {
+  text-align: center;
+}
+
+.android-screen .android-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.android-image-link {
+  text-decoration: none;
+}
+
+.android-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .android-wear .android-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.android-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .android-phone .android-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.android-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .android-tablet .android-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .android-tablet .android-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.android-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .android-tv .android-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.android-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .android-auto .android-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .agende-contato-section {
+      background: url('../images/presdents/slider/foto2.jpeg') center top no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+      /* height: 400px; */
+      background-attachment: fixed;
+      
+    }
+    .agende-contato-form-section .agende-contato-section-title { 
+      margin-bottom: 50px;
+      color:rgb(255, 255, 255)
+    }
+    .agende-contato-form-section form .mdl-textfield .mdl-textfield__label {
+      color:rgba(255, 255, 255, 0.8) !important;
+    }
+    .agende-contato-form-section form .mdl-textfield .mdl-textfield__input {
+      border-bottom: 1px solid rgba(56, 135, 198, 0.8) !important;
+    }
+    .agende-contato-form-section form .mdl-textfield {
+      width: 100% !important;
+      /* margin: 0 auto */
+    }
+    .agende-contato-form-section form {
+      max-width: 60%;
+      margin: 0 auto;
+      
+    }
+    .agende-contato-form-section {
+      padding: 20px 10px;
+      margin: 0;
+      background-color: rgba(82, 20, 16, 0.7);
+    }
+    .agende-contato-section-content {
+      /* position: absolute; */
+      /* bottom: 0; */
+      margin: 0 auto;
+      display: flex;
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+      background-color: rgba(26, 63, 101, 0.7);
+    }
+    .agende-contato-section-title {
+      /* max-width: 800px; */
+      margin-bottom: 50px;
+      color: #fff;
+      /* font-size: 3rem; */
+      /* margin-left: 25%; */
+      /* padding: 24px; */
+      text-transform: uppercase;
+      text-align: center;
+      /* color: white; */
+    }
+    
+      .agende-contato-section-text2 {
+        
+        color: #20431B;
+       }
+  
+      .agende-contato-section-text {
+        padding-top: 12px;
+        /* direction: ltr; */
+        text-align:center;
+        /* font-size: 2rem; */
+        color: #285122;
+      }
+
+
+
+
+.presdents-link {
+  text-decoration: none;
+  color: #7CB367 !important;
+}
+
+  .presdents-link:hover {
+    color: #A2FF90 !important;
+    background-color: #11190E;
+  }
+
+  .presdents-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+  .agendar-btn1-link {
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #3786C8;
+    font-size: 2.4rem;
+    padding: 10px 25px;
+    transition: all 200ms;
+    border-radius: 50px;
+  }
+
+  .agendar-btn1-link:hover {
+    color: #fff !important;
+    background-color: #45ACFF;
+    /* border: solid 1px #fff; */
+    padding-left: 35px;
+  }
+
+.android-alt-link {
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #521410;
+  font-size: 16px;
+  padding: 8px;
+  transition: all 200ms;
+  border-radius: 20px;
+}
+
+  .android-alt-link:hover {
+    color: #521410 !important;
+    background-color: #FF4234;
+    border: solid 1px #fff;
+    padding-left: 18px;
+  }
+
+  .android-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.all-threatments-btn {
+  background-color: #3886C6;
+  color: #fff;
+  margin: 10px 0 50px 0;
+  /* background-color: #FF3931; */
+}
+.all-threatments-btn:hover {
+  color: #fff;
+  /* background-color: #CF2F28 */
+
+  background-color: #48ACFF;
+}
+.agendar-threatments-btn {
+  background-color: #D2372B;
+  color: #fff;
+  margin: 10px 0 50px 0;
+  /* background-color: #FF3931; */
+}
+.agendar-threatments-btn:hover {
+  color: #fff;
+  /* background-color: #CF2F28 */
+
+  background-color: #85221B;
+}
+.dismiss-mensagem-btn {
+  background-color: #fff;
+  color: #3887C6;
+  margin: 10px 0 50px 0;
+  border-radius: 50px;
+  transition: padding-left 300ms ease-out;
+  /* background-color: #FF3931; */
+  
+}
+.dismiss-mensagem-btn:hover {
+  color: #fff;
+  /* background-color: #CF2F28 */
+  padding-left: 30px;
+  background-color: #225279;
+}
+
+
+.enviar-mensagem-btn {
+  background-color: #3887C6;
+  color: #fff;
+  margin: 10px 0 50px 0;
+  border-radius: 50px;
+  transition: padding-left 300ms ease-out;
+  /* background-color: #FF3931; */
+  
+}
+.enviar-mensagem-btn:hover {
+  color: #fff;
+  /* background-color: #CF2F28 */
+  padding-left: 30px;
+  background-color: #225279;
+}
+.map-section {
+  padding: 0;
+  /* max-width: 1044px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .map-section .android-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+.android-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .android-more-section .android-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.android-card-container {
+}
+
+  .android-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .android-card-container .mdl-card__media img {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+      min-height: 210px;
+      max-height: 210px;
+    }
+
+  .android-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+  .android-card-container .agende.mdl-card__title {
+    background: transparent;
+    height: auto;
+    justify-content: center !important;
+  }
+
+  .android-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .android-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .android-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .android-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.presdents-footer--container .presdents-footer--top-section .presdents-footer--left-section p { 
+  font-size: 2rem;
+} 
+.presdents-footer--container .presdents-footer--top-section .presdents-footer--back-to-top { 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.presdents-footer--container .presdents-footer--top-section { 
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  /* border: solid 1px orange */
+  margin-bottom: 80px;
+}
+.presdents-footer--container {
+  background-color: #0E0E21;
+  position: relative;
+  min-height: 80vh;
+  height: auto;
+  color: #fff !important;
+  /* border: solid 1px red; */
+  box-shadow: 0px -1px 3px 1px rgba(0,0,0,0.85);
+-webkit-box-shadow: 0px -1px 2px 1px rgba(0,0,0,0.90);
+-moz-box-shadow: 0px -1px 3px 1px rgba(0,0,0,0.85);
+  flex-direction: column;
+}
+.presdents-footer--container .presdents-footer--middle-section .tel-addr li:nth-child(1)::before {
+  
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f095"; /* FontAwesome Unicode */
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.presdents-footer--container .presdents-footer--middle-section .tel-addr li:nth-child(2)::before {
+  
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f3c5"; /* FontAwesome Unicode */
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.presdents-footer--container .presdents-footer--middle-section .tel-addr li:nth-child(1) { 
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+.presdents-footer--container .presdents-footer--middle-section .tel-addr li:nth-child(2) { 
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+.presdents-footer--container .presdents-footer--middle-section .tel-addr li { 
+  padding-left: 30px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.presdents-footer--container .presdents-footer--middle-section .tel-addr {
+  list-style: none;
+  position: relative;
+  
+  padding: 0px;
+  margin: 0;
+  list-style-type: none;
+}
+.presdents-footer--container .presdents-footer--middle-section i {
+  padding: 5px 8px;
+}
+.presdents-footer--container .presdents-footer--middle-section {
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+}
+hr {
+  margin: 20px auto !important;
+}
+.bottom-menu > li ul {
+  list-style: none;
+  position: relative;
+  
+  padding: 0px;
+  padding-left: 10px;
+  margin: 0;
+  list-style-type: none;
+}
+.bottom-menu {
+  list-style: none;
+  position: relative;
+  
+  padding: 0px;
+  margin: 0;
+  list-style-type: none;
+}
+.bottom-menu > li ul > li {
+  text-align: left;
+}
+.bottom-menu > li {
+  float: left;
+  text-align: left;
+  margin: 5px 10px;
+}
+  .android-footer a:hover {
+    color: #fff;
+  }
+
+  .android-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .android-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .android-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .android-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .android-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.android-link-menu:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  .custom-header-section .custom-header-style1 .content-custom-header-section .content-box h4 {
+    font-size: 2.2rem;
+  }
+  .custom-header-section .custom-header-style1 .content-custom-header-section .content-box {
+    /* border-radius: 0; */
+    width: 96vw;
+  }
+
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .custom-header-section .custom-header-style1 .content-custom-header-section .content-box h4 {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  .custom-header-section .custom-header-style1 .content-custom-header-section .content-box h4 {
+    font-size: 2.4rem;
+  }
+}
+
+
+
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .android-navigation-container {
+    display: none;
+  }
+
+  .android-title {
+    display: none !important;
+  }
+
+  .android-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .android.android-search-box.is-focused ~ .android-mobile-title,
+  .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {
+    opacity: 0;
+  }
+
+  .android-more-button {
+    display: none;
+  }
+
+  .android-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .android-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .android-be-together-section {
+    height: 350px;
+  }
+
+  .android-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .android-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .android-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .android-create-character img {
+    height: 12px;
+  }
+
+  .android-fab {
+    display: none;
+  }
+
+  .android-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .android-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}

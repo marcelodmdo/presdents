@@ -1,0 +1,236 @@
+.tratamentos-header-section {
+  /* max-width: 1044px;
+  margin: 0 auto; */
+}
+
+.tratamentos-header-section .right-side h3 {
+  color: #86211C;
+  font-size: 3rem;
+  line-height: 3.0rem;
+}
+
+.tratamentos-header-section .right-side .tratamentos-section .mdl-grid {
+  justify-content: flex-end;
+}
+
+.tratamentos-header-section .right-side {
+  padding: 10px 10px 10px 10px;
+}
+
+.tratamentos-header-section .left-side h3 {
+  color: #262665;
+  font-size: 3.0rem;
+  line-height: 3.0rem;
+}
+
+.tratamentos-header-section .left-side {
+  padding: 10px 10px 10px 10px;
+  justify-content: flex-start;
+}
+
+.tratamentos-header-section .tratamentos-subtitle h3 {
+  position: relative;
+}
+
+.tratamentos-slider-section .slick-next {
+  right: -20px;
+}
+
+.tratamentos-slider-section .slick-prev {
+  left: -40px;
+}
+
+.tratamentos-slider-section .slick-next, .tratamentos-slider-section .slick-prev {
+  z-index: 20;
+}
+
+.tratamentos-slider-section .slick-next::before:hover, .tratamentos-slider-section .slick-prev::before:hover {
+  /* border: solid 1px red !important; */
+  color: #11190E;
+  opacity: 1;
+}
+
+.tratamentos-slider-section .slick-next::before, .tratamentos-slider-section .slick-prev::before {
+  /* border: solid 1px red !important; */
+  color: #5F8A4D;
+  font-size: 3rem;
+  z-index: 20;
+  opacity: 0.8;
+}
+
+.tratamentos-slider .mdl-card__media img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+.tratamentos-slider .mdl-card {
+  padding: 10px;
+}
+
+.tratamentos-slider .mdl-card__media {
+  background-color: unset;
+}
+
+.tratamentos-slider-section {
+  padding: 60px 60px 30px 60px;
+}
+
+.tratamentos-slider-section .tratamentos-slider .mdl-card__title h4 {
+  font-size: 1.2rem;
+}
+
+.tratamentos-list-section .tratamentos-list-left .tratamentos-list li i {
+  color: #3786C8;
+  background-color: unset;
+}
+
+.tratamentos-list-section .tratamentos-list-right .tratamentos-list li i {
+  color: #428537;
+  background-color: unset;
+}
+
+.tratamentos-list-section .tratamentos-list {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.tratamentos-list-section .mdl-list__item-text-body {
+  text-overflow: ellipsis;
+}
+
+.tratamentos-list-section .tratamentos-list li {
+  /* margin-bottom: 20px !important; */
+  border-bottom: solid 1px #ffaba5;
+  /* padding-bottom: 20px; */
+  min-height: 180px !important;
+  height: auto;
+  /* height: 120px !important; */
+}
+
+.tratamentos-agende-contato-section .mdl-grid {
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.tratamentos-agende-contato-section {
+  background: url('../images/presdents/slider/foto2.jpeg') center top no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  /* height: 400px; */
+  background-attachment: fixed;
+}
+
+.tratamentos-agende-contato-form-section .tratamentos-agende-contato-section-title {
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255)
+}
+
+.tratamentos-agende-contato-form-section form .mdl-textfield .mdl-textfield__label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.tratamentos-agende-contato-form-section form .mdl-textfield .mdl-textfield__input {
+  border-bottom: 1px solid rgba(56, 135, 198, 0.8) !important;
+}
+
+.tratamentos-agende-contato-form-section form .mdl-textfield {
+  width: 100% !important;
+  /* margin: 0 auto */
+}
+
+.tratamentos-agende-contato-form-section form {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.tratamentos-agende-contato-form-section {
+  padding: 20px 10px;
+  margin: 0;
+  background-color: rgba(82, 20, 16, 0.9);
+}
+
+.tratamentos-agende-contato-section-content {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: rgba(26, 63, 101, 0.9);
+}
+
+.tratamentos-agende-contato-section-title {
+  /* max-width: 800px; */
+  margin-bottom: 50px;
+  color: #fff;
+  /* font-size: 3rem; */
+  /* margin-left: 25%; */
+  /* padding: 24px; */
+  text-transform: uppercase;
+  text-align: center;
+  /* color: white; */
+}
+
+.tratamentos-agende-contato-section-text2 {
+  color: #20431B;
+}
+
+.tratamentos-agende-contato-section-text {
+  padding-top: 12px;
+  /* direction: ltr; */
+  text-align: center;
+  /* font-size: 2rem; */
+  color: #285122;
+}
+
+/**** Mobile layout ****/
+
+@media (min-width: 0px) and (max-width: 425px) {
+  .tratamentos-subtitle h3 {
+    font-size: 2.6rem !important;
+    text-align: center;
+  }
+
+  .tratamentos-agende-contato-section-title {
+    font-size: 1.7rem;
+  }
+
+  .agendar-btn1-link {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .tratamentos-subtitle h3 {
+    font-size: 2.6rem !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .tratamentos-subtitle h3 {
+    font-size: 2.2rem !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .tratamentos-subtitle h3 {
+    font-size: 2.4rem !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .tratamentos-subtitle h3 {
+    /* font-size: 2.6rem !important; */
+    text-align: center;
+  }
+}

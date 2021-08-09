@@ -1,0 +1,240 @@
+.melhor-clinica-section {
+  position: relative;
+  /* background: url('../images/presdents/slider/foto1.jpeg') center top no-repeat; */
+  /* background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; */
+  min-height: 300px;
+  height: auto;
+  /* box-shadow: inset 0px 0px 1px rgba(0,0,0,0.5); */
+}
+
+.melhor-clinica {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1084px;
+  /* border-radius: 0 0 50px 50px; */
+  text-align: center;
+  /* background-color: rgba(51, 120, 178, 0.800); */
+}
+
+.melhor-clinica-text {
+  max-width: 800px;
+  /* margin-left: 25%; */
+  padding: 24px 0;
+  text-align: left;
+  color: #081006;
+}
+
+.melhor-clinica-text p {
+  padding-top: 8px;
+}
+
+.meta-section {
+  position: relative;
+  /* background: url('../images/presdents/slider/foto1.jpeg') center top no-repeat; */
+  /* background-image: url("../images/presdents/foto03.jpeg"); */
+  /* background-attachment: fixed;
+    background-repeat: no-repeat, repeat-y; */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  /* background-position: top 30% center; */
+  /* height: 75vh; */
+  /* box-shadow: inset 0px 0px 8px rgba(0,0,0,0.5); */
+}
+
+.meta-section-content {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* transform: translateY(-50%); */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1084px;
+  padding: 40px 0px;
+  /* border-radius: 50px ; */
+  text-align: right;
+  background-color: white;
+}
+
+.meta-section-title {
+  /* max-width: 800px; */
+  color: #D3352C;
+  /* font-size: 3rem; */
+  /* margin-left: 25%; */
+  /* padding: 24px; */
+  text-align: right;
+  /* color: white; */
+}
+
+.meta-section-text {
+  padding-top: 8px;
+  text-align: right;
+  ;
+  /* font-size: 2rem; */
+  color: #D3352C;
+}
+
+.valores-contato-form-section .valores-contato-section-title {
+  margin-bottom: 50px;
+  color: rgb(56, 135, 198)
+}
+
+.valores-contato-form-section form .mdl-textfield .mdl-textfield__label {
+  color: rgba(56, 135, 198, 0.8) !important;
+}
+
+.valores-contato-form-section form .mdl-textfield .mdl-textfield__input {
+  border-bottom: 1px solid rgba(56, 135, 198, 0.8) !important;
+}
+
+.valores-contato-form-section form .mdl-textfield {
+  width: 100% !important;
+  /* margin: 0 auto */
+}
+
+.valores-contato-form-section form {
+  max-width: 60%;
+  margin: 0 auto
+}
+
+.valores-contato-form-section {
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.valores-section-content {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1084px;
+  padding: 40px 0px;
+  background-color: white;
+}
+
+.valores-section-title {
+  /* max-width: 800px; */
+  margin-bottom: 50px;
+  color: #428438;
+  /* font-size: 3rem; */
+  /* margin-left: 25%; */
+  /* padding: 24px; */
+  text-transform: uppercase;
+  text-align: left;
+  /* color: white; */
+}
+
+.valores-section-text2 {
+  color: #20431B;
+}
+
+.valores-section-text {
+  padding-top: 12px;
+  /* direction: ltr; */
+  text-align: left;
+  /* font-size: 2rem; */
+  color: #285122;
+}
+
+.contato-section .mdl-grid {
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.contato-section {
+  background: url('../images/presdents/slider/foto2.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  /* height: 400px; */
+  background-attachment: fixed;
+}
+
+.contato-form-section .contato-section-title {
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255)
+}
+
+.contato-form-section form .mdl-textfield .mdl-textfield__label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.contato-form-section form .mdl-textfield .mdl-textfield__input {
+  border-bottom: 1px solid rgba(56, 135, 198, 0.8) !important;
+}
+
+.contato-form-section form .mdl-textfield {
+  width: 100% !important;
+  /* margin: 0 auto */
+}
+
+.contato-form-section form {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.contato-form-section {
+  padding: 20px 10px;
+  margin: 0;
+  background-color: rgba(42, 42, 102, 0.9);
+}
+
+.contato-section-content {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: rgba(26, 63, 101, 0.7);
+}
+
+.contato-section-title {
+  /* max-width: 800px; */
+  margin-bottom: 50px;
+  color: #fff;
+  /* font-size: 3rem; */
+  /* margin-left: 25%; */
+  /* padding: 24px; */
+  text-transform: uppercase;
+  text-align: center;
+  /* color: white; */
+}
+
+.contato-section-text2 {
+  color: #20431B;
+}
+
+.contato-section-text {
+  padding-top: 12px;
+  /* direction: ltr; */
+  text-align: center;
+  /* font-size: 2rem; */
+  color: #285122;
+}
+
+/**** Mobile layout ****/
+
+@media (min-width: 0px) and (max-width: 425px) {
+  
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  
+}
+
+@media (min-width: 1025px) {
+  
+}

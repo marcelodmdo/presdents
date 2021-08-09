@@ -1,0 +1,918 @@
+.home-slider-section .home-main-slider .slider-style1,
+.home-slider-section .home-main-slider .slider-style2,
+.home-slider-section .home-main-slider .slider-style3 {
+  height: 70vh;
+  background-position: left 20% center;
+  background-size: cover;
+}
+.home-slider-section .home-main-slider .slider-style4 {
+  height: 70vh;
+  background-position: center center;
+  background-size: cover;
+}
+.home-slider-section .home-main-slider img { /* temp */
+  object-fit: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+
+.home-slider-section .home-main-slider .slider-style1 .content-slider-section, 
+.home-slider-section .home-main-slider .slider-style2 .content-slider-section,
+.home-slider-section .home-main-slider .slider-style3 .content-slider-section,
+.home-slider-section .home-main-slider .slider-style4 .content-slider-section {
+  height: 60vh;
+  /* padding: 40px 60px; */
+  position: relative;
+}
+
+
+.home-slider-section .home-main-slider .slider-style4 .content-box {
+    border-radius: 40px 64px 0px 0px ;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+    transition: all 2s ease;
+    opacity: 0;
+    max-height: 0px;
+    padding: 0px 20px 0px 0px;
+    text-align: left;
+  }
+  
+  .home-slider-section .home-main-slider .slider-style3 .content-box {
+    border-radius: 0px 0px 40px 64px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    
+    transition: all 2s ease;
+    opacity: 0;
+    max-height: 0px;
+    padding: 0px 0px 0px 20px;
+    text-align: right;
+  }
+  .home-slider-section .home-main-slider .slider-style1 .content-box,
+  .home-slider-section .home-main-slider .slider-style2 .content-box {
+    border-radius: 0px 0px 64px 40px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 50%;
+    
+    transition: all 2s ease;
+    opacity: 0;
+    max-height: 0px;
+    padding: 0px 20px 0px 0px;
+    text-align: left;
+  }
+  .home-slider-section .home-main-slider .slider-style3.slick-current .content-box {
+    opacity: 1 !important;
+    padding: 50px 0px 0px 20px !important;
+    transition: all 2s ease;
+    max-height: 430px;
+  }
+  .home-slider-section .home-main-slider .slider-style4.slick-current .content-box {
+    opacity: 1 !important;
+    padding: 0px 20px 50px 0px !important;
+    transition: all 2s ease;
+    max-height: 430px ;
+  }
+  
+  
+  .home-slider-section .home-main-slider .slider-style1.slick-current .content-box,
+  .home-slider-section .home-main-slider .slider-style2.slick-current .content-box {
+    opacity: 1 !important;
+    padding: 50px 20px 0px 0px !important;
+    transition: all 2s ease;
+    max-height: 430px;
+  }
+  
+  .home-slider-section .home-main-slider .slider-style3.slick-current .content-slider-section .content-box h4 { 
+    /* border: solid 1px red; */
+    padding: 20px 20px 20px 10px;
+    height: 100%;
+    
+    opacity: 1 !important;
+    transition: all 2s ease;
+    line-height: 3.0rem;
+    
+  }
+  .home-slider-section .home-main-slider .slider-style4.slick-current .content-slider-section .content-box h4 { 
+    /* border: solid 1px red; */
+    padding: 20px 10px 20px 20px;
+    height: 100%;
+    
+    opacity: 1 !important;
+    transition: all 2s ease;
+    line-height: 3.0rem;
+  }
+  
+  .home-slider-section .home-main-slider .slider-style1.slick-current .content-slider-section .content-box h4,
+  .home-slider-section .home-main-slider .slider-style2.slick-current .content-slider-section .content-box h4 { 
+    /* border: solid 1px red; */
+    padding: 20px 10px 20px 20px;
+    height: 100%;
+    
+    opacity: 1 !important;
+    transition: all 2s ease;
+    line-height: 3.0rem;
+    
+  }
+
+  .home-slider-section .home-main-slider .slider-style3 .content-slider-section .content-box h4 { 
+  
+    display: inline-block;
+    padding: 0px 20px 0px 10px;
+    opacity: 0;
+    height: 0;
+    font-weight: 200;
+    color: #fff;
+    margin: 0;
+    line-height: 0rem;
+    font-size: 2.0rem;
+    border-radius: 40px 0px 40px 40px;
+    transition: all 2s ease;
+  }
+  .home-slider-section .home-main-slider .slider-style4 .content-slider-section .content-box h4 { 
+    
+    display: inline-block;
+    padding: 0px 10px 0px 20px;
+    opacity: 0;
+    height: 0;
+    font-weight: 200;
+    color: #fff;
+    margin: 0;
+    line-height: 0rem;
+    font-size: 3.0rem;
+    border-radius: 40px 40px 40px 0px;
+    transition: all 2s ease;
+  }
+  
+  .home-slider-section .home-main-slider .slider-style1 .content-slider-section .content-box h4,
+  .home-slider-section .home-main-slider .slider-style2 .content-slider-section .content-box h4 { 
+    
+    display: inline-block;
+    padding: 0px 10px 0px 20px;
+    opacity: 0;
+    height: 0;
+    font-weight: 200;
+    color: #fff;
+    margin: 0;
+    line-height: 0rem;
+    font-size: 3rem;
+    border-radius: 0px 40px 40px 40px;
+    transition: all 2s ease;
+  }
+  
+  .home-slider-section .home-main-slider .slider-style3 .content-slider-section .content-box a {
+    text-decoration: none;
+    color: #0D1E2D !important;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px;
+  }
+  
+.home-slider-section .home-main-slider .slider-style3 .content-slider-section .content-box a:hover {
+    color: #fff !important;
+    background-color: #23537A;
+}
+
+.home-slider-section .home-main-slider .slider-style3 .content-slider-section .content-box a .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.home-main-slider .slick-next {
+    right: 30px;
+  }
+  .home-main-slider .slick-prev  {
+    left: 10px;
+  }
+  .home-main-slider .slick-next,
+  .home-main-slider .slick-prev {
+    z-index: 20;
+  }
+  .home-main-slider .slick-next::before,
+  .home-main-slider .slick-prev::before {
+    /* border: solid 1px red !important; */
+    color: rgba(30, 82, 123, 1);
+    font-size: 3rem;
+    z-index: 20;
+  }
+
+.home-slider-section {
+    position: relative;
+    height: 74vh;
+    width: auto;
+    background-color: #ffffff;
+    /* background: url('../images/presdents/slider/foto2.jpeg') center 30% no-repeat; */
+    background-size: cover;
+  }
+
+
+  
+.home-basic-contact-section {
+  position: relative;
+  padding-top: 20px;
+  font-size: 1.8rem;
+  padding-bottom: 60px;
+}
+
+.home-basic-contact-section .right-side {
+  padding: 20px 10px 20px 110px;
+  /* padding-right: 110px; */
+  line-height: 2.0rem;
+  background-image: url('../images/presdents/working-time.png');
+  background-repeat: no-repeat;
+  background-position: top left 20px;
+  
+  background-size: 76px 76px;
+}
+
+.home-basic-contact-section .left-side {
+  padding: 20px 110px 20px 10px;
+  /* padding-right: 110px; */
+  line-height: 2.0rem;
+  background-image: url('../images/presdents/location-icon.png');
+  background-repeat: no-repeat;
+  background-position: top right 20px;
+  
+  background-size: 86px 86px;
+}
+
+
+
+.home-basic-contact-section .address-street {
+  position: relative;
+  /* padding-top: 60px; */
+  font-size: 1.8rem;
+  /* padding-bottom: 80px; */
+}
+
+.home-basic-contact-section .address-street-city {
+  position: relative;
+  /* padding-top: 60px; */
+  font-size: 1.7rem;
+  /* padding-bottom: 80px; */
+}
+
+
+
+
+
+
+.home-tratamentos-section {
+  padding: 0px;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-tratamentos-section .mdl-cell {
+  height: 480px;
+}
+
+.home-tratamentos-section .home-tratamento-section-title {
+  margin-left: 12px;
+  padding-bottom: 24px;
+}
+
+
+
+
+.home-tratamentos-section-card-container {
+}
+
+  .home-tratamentos-section-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .home-tratamentos-section-card-container .mdl-card__media img {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+      min-height: 210px;
+      max-height: 210px;
+    }
+
+  .home-tratamentos-section-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+  .home-tratamentos-section-card-container .agende.mdl-card__title {
+    background: transparent;
+    height: auto;
+    justify-content: center !important;
+  }
+
+  .home-tratamentos-section-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .home-tratamentos-section-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .home-tratamentos-section-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .home-tratamentos-section-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+
+
+
+
+
+  
+.home-tratamentos-slider-section .slick-next {
+  right: -20px;
+}
+
+.home-tratamentos-slider-section .slick-prev {
+  left: -40px;
+}
+.home-tratamentos-slider-section .slick-next,
+.home-tratamentos-slider-section .slick-prev {
+  
+  z-index: 20;
+}
+.home-tratamentos-slider-section .slick-next::before:hover,
+.home-tratamentos-slider-section .slick-prev::before:hover {
+  /* border: solid 1px red !important; */
+  color: #11190E;
+  opacity: 1;
+}
+.home-tratamentos-slider-section .slick-next::before,
+.home-tratamentos-slider-section .slick-prev::before {
+  /* border: solid 1px red !important; */
+  color: #5F8A4D;
+  font-size: 3rem;
+  z-index: 20;
+  opacity: 0.8;
+}
+
+
+.home-tratamentos-slider .mdl-card__media img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  min-height: 180px;
+  max-height: 180px;
+ }
+.home-tratamentos-slider .mdl-card {
+  padding: 10px;
+}
+.home-tratamentos-slider .mdl-card__media {
+  background-color: unset;
+  
+}
+.home-tratamentos-slider-section {
+  padding: 60px 60px 30px 60px; 
+}
+.home-tratamentos-slider-section .home-tratamentos-slider .mdl-card__title h4 {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+.home-melhor-clinica-section {
+  position: relative;
+  background: url('../images/presdents/slider/foto1.jpeg') center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 600px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.home-melhor-clinica {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 0 0 50px 50px;
+  text-align: center;
+  background-color: rgba(51, 120, 178, 0.800);
+}
+
+.home-melhor-clinica-text {
+  max-width: 800px;
+  /* margin-left: 25%; */
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .home-melhor-clinica-text p {
+    padding-top: 8px;
+  }
+
+
+
+  
+.dra-jack-section {
+  text-align: center;
+  
+}
+
+.dra-jack-section-text {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0px 0 0px;
+  /* height: 270px; */
+  
+}
+
+  .dra-jack-section-text p {
+    padding-top: 16px;
+  }
+
+.dra-jack-section-image {
+  background: url('../images/presdents/slider/foto2.jpeg') center top no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 400px;
+}
+
+
+.dra-jack-section .dra-jack img {
+  width: 180px;
+  transform: translate(20%,16px);
+}
+.dra-jack-section .dra-jack .jack-info p:nth-of-type(1) {
+  font-weight: 600; 
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+.home-meta-section {
+  position: relative;
+  /* background: url('../images/presdents/slider/foto1.jpeg') center top no-repeat; */
+  background-image: url("../images/presdents/foto03.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat, repeat-y;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: top 30% center;
+  height: 75vh;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.home-meta-section-content {
+  /* position: absolute; */
+  /* bottom: 0; */
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 60%;
+  
+  padding: 40px 40px;
+  border-radius: 50px ;
+  text-align: center;
+  background-color: white;
+}
+
+.home-meta-section-title {
+  /* max-width: 800px; */
+  color: #D3352C;
+  /* font-size: 3rem; */
+  /* margin-left: 25%; */
+  /* padding: 24px; */
+  text-align: center;
+  /* color: white; */
+}
+
+  .home-meta-section-text {
+    padding-top: 8px;
+    text-align: center;;
+    /* font-size: 2rem; */
+    color: #86211C;
+  }
+
+
+  .home-valores-contato-section-content {
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin: 0 auto;
+    
+    padding: 40px 20px;
+    background-color: white;
+  }
+  .home-valores-contato-section-title {
+    /* max-width: 800px; */
+    margin-bottom: 50px;
+    color: #428438;
+    /* font-size: 3rem; */
+    /* margin-left: 25%; */
+    /* padding: 24px; */
+    text-transform: uppercase;
+    text-align: center;
+    /* color: white; */
+  }
+  
+    .home-valores-contato-section-text2 {
+      
+      color: #20431B;
+     }
+
+    .home-valores-contato-section-text {
+      padding-top: 12px;
+      /* direction: ltr; */
+      text-align:center;
+      /* font-size: 2rem; */
+      color: #285122;
+    }
+
+
+    
+  .home-valores-contato-form-section .valores-contato-section-title { 
+    margin-bottom: 50px;
+    color:rgb(56, 135, 198)
+  }
+  .home-valores-contato-form-section form .mdl-textfield .mdl-textfield__label {
+    color:rgba(56, 135, 198, 0.8) !important;
+  }
+  .home-valores-contato-form-section form .mdl-textfield .mdl-textfield__input {
+    border-bottom: 1px solid rgba(56, 135, 198, 0.8) !important;
+  }
+  .home-valores-contato-form-section form .mdl-textfield {
+    width: 100% !important;
+    /* margin: 0 auto */
+  }
+  .home-valores-contato-form-section form {
+    max-width: 60%;
+    margin: 0 auto
+  }
+  .home-valores-contato-form-section {
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+
+
+
+/**** Mobile layout ****/
+@media (min-width: 0px) and (max-width: 425px) {
+    .home-slider-section .home-main-slider .slider-style1.slick-current .content-box,
+    .home-slider-section .home-main-slider .slider-style2.slick-current .content-box,
+    .home-slider-section .home-main-slider .slider-style3.slick-current .content-box,
+    .home-slider-section .home-main-slider .slider-style4.slick-current .content-box {
+        width: 80% !important;
+        max-height: 430px !important;
+    }
+    .home-slider-section .home-main-slider .slider-style1.slick-current  .content-box h4,
+    .home-slider-section .home-main-slider .slider-style2.slick-current  .content-box h4,
+    .home-slider-section .home-main-slider .slider-style3.slick-current  .content-box h4,
+    .home-slider-section .home-main-slider .slider-style4.slick-current  .content-box h4 {
+        padding: 20px 10px 20px 10px;
+        font-weight: 200;
+        margin: 0;
+        line-height: 2.4rem;
+        font-size: 2.4rem;
+        transition: all 2s ease;
+    }
+
+    .home-slider-section .home-main-slider .slider-style1 .content-slider-section .content-box,
+    .home-slider-section .home-main-slider .slider-style2 .content-slider-section .content-box,
+    .home-slider-section .home-main-slider .slider-style3 .content-slider-section .content-box,
+    .home-slider-section .home-main-slider .slider-style4 .content-slider-section .content-box {
+        width: 80% !important;
+        max-height: 430px;
+    }
+    .home-slider-section .home-main-slider .slider-style1 .content-slider-section .content-box h4,
+    .home-slider-section .home-main-slider .slider-style2 .content-slider-section .content-box h4,
+    .home-slider-section .home-main-slider .slider-style3 .content-slider-section .content-box h4,
+    .home-slider-section .home-main-slider .slider-style4 .content-slider-section .content-box h4 {
+        padding: 0px 5px 0px 5px;
+        font-weight: 200;
+        margin: 0;
+        line-height: 0rem;
+        font-size: 2.2rem;
+        transition: all 2s ease;
+    }
+
+    .home-basic-contact-section .address-street {
+      position: relative;
+      /* padding-top: 60px; */
+      font-size: 1.4rem !important;
+      /* padding-bottom: 80px; */
+    }
+  
+    .home-basic-contact-section .address-street-city {
+      position: relative;
+      /* padding-top: 60px; */
+      font-size: 1.4rem !important;
+      /* padding-bottom: 80px; */
+    }
+  
+    .home-basic-contact-section {
+      position: relative;
+      padding-top: 20px;
+      font-size: 1.4rem !important;
+      padding-bottom: 60px;
+    }
+  
+    .home-basic-contact-section .right-side {
+      padding: 86px 10px 20px 10px !important;
+      /* padding-right: 110px; */
+      line-height: 2.0rem;
+      background-image: url('../images/presdents/working-time.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      text-align: center !important;
+      background-size: 76px 76px;
+      font-size: 1.4rem !important;
+    }
+  
+    .home-basic-contact-section .left-side {
+      padding: 86px 10px 20px 10px !important;
+      /* padding-right: 110px; */
+      line-height: 2.0rem;
+      background-image: url('../images/presdents/location-icon.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      text-align: center !important;
+      font-size: 1.4rem !important;
+      background-size: 86px 86px;
+    }
+
+    .home-melhor-clinica {
+      width: 96% !important;
+    }
+
+    
+
+
+  .dra-jack-section .dra-jack .jack-foto img {
+    width: 180px;
+    transform: translate(20%,16px);
+  }
+  .dra-jack-section .dra-jack .jack-info {
+    font-size: 2rem !important;
+  }
+  .dra-jack-section .dra-jack .jack-info p:nth-of-type(1) {
+    font-weight: 600; 
+    font-size: 1.2rem;
+  }
+  .dra-jack-section .dra-jack .jack-info a:nth-of-type(1) {
+    font-weight: 600; 
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .home-melhor-clinica {
+    width: 90% !important;
+  }
+
+  .home-basic-contact-section .address-street {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.4rem !important;
+    /* padding-bottom: 80px; */
+  }
+
+  .home-basic-contact-section .address-street-city {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.2rem !important;
+    /* padding-bottom: 80px; */
+  }
+
+  .home-basic-contact-section {
+    position: relative;
+    padding-top: 20px;
+    font-size: 1.2rem !important;
+    padding-bottom: 60px;
+  }
+
+  .home-basic-contact-section .right-side {
+    padding: 86px 10px 20px 10px !important;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/working-time.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center !important;
+    background-size: 66px 66px;
+    font-size: 1.4rem !important;
+  }
+
+  .home-basic-contact-section .left-side {
+    padding: 86px 10px 20px 10px !important;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/location-icon.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    background-size: 66px 66px;
+  }
+  
+  .dra-jack-section .dra-jack .jack-foto img {
+    width: 180px;
+    transform: translate(20%,16px);
+  }
+  .dra-jack-section .dra-jack .jack-info {
+    font-size: 2rem !important;
+  }
+  .dra-jack-section .dra-jack .jack-info p:nth-of-type(1) {
+    font-weight: 600; 
+    font-size: 1.2rem;
+  }
+  .dra-jack-section .dra-jack .jack-info a:nth-of-type(1) {
+    font-weight: 600; 
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .home-basic-contact-section .address-street {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.4rem !important;
+    /* padding-bottom: 80px; */
+  }
+
+  .home-basic-contact-section .address-street-city {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.2rem !important;
+    /* padding-bottom: 80px; */
+  }
+
+  .home-basic-contact-section {
+    position: relative;
+    padding-top: 20px;
+    font-size: 1.2rem !important;
+    padding-bottom: 60px;
+  }
+
+  .home-basic-contact-section .right-side {
+    padding: 86px 10px 20px 10px !important;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/working-time.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center !important;
+    background-size: 66px 66px;
+    font-size: 1.4rem !important;
+  }
+
+  .home-basic-contact-section .left-side {
+    padding: 86px 10px 20px 10px !important;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/location-icon.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    background-size: 66px 66px;
+  }
+  
+  .home-melhor-clinica {
+    width: 80% !important;
+  }
+  .home-melhor-clinica-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .home-basic-contact-section {
+    position: relative;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    padding-bottom: 60px;
+  }
+  
+  .home-basic-contact-section .right-side {
+    padding: 20px 10px 20px 110px;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/working-time.png');
+    background-repeat: no-repeat;
+    background-position: top left 20px;
+    
+    background-size: 76px 76px;
+  }
+  
+  .home-basic-contact-section .left-side {
+    padding: 20px 110px 20px 10px;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/location-icon.png');
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+    
+    background-size: 86px 86px;
+  }
+  
+  
+  
+  .home-basic-contact-section .address-street {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.3rem;
+    /* padding-bottom: 80px; */
+  }
+  
+  .home-basic-contact-section .address-street-city {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.3rem;
+    /* padding-bottom: 80px; */
+  }
+  
+  .home-melhor-clinica {
+    width: 80% !important;
+  }
+  .home-melhor-clinica-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .home-basic-contact-section {
+    position: relative;
+    padding-top: 20px;
+    font-size: 1.7rem;
+    padding-bottom: 60px;
+  }
+  
+  .home-basic-contact-section .right-side {
+    padding: 20px 10px 20px 110px;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/working-time.png');
+    background-repeat: no-repeat;
+    background-position: top left 20px;
+    
+    background-size: 76px 76px;
+  }
+  
+  .home-basic-contact-section .left-side {
+    padding: 20px 110px 20px 10px;
+    /* padding-right: 110px; */
+    line-height: 2.0rem;
+    background-image: url('../images/presdents/location-icon.png');
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+    
+    background-size: 86px 86px;
+  }
+  
+  
+  
+  .home-basic-contact-section .address-street {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.7rem;
+    /* padding-bottom: 80px; */
+  }
+  
+  .home-basic-contact-section .address-street-city {
+    position: relative;
+    /* padding-top: 60px; */
+    font-size: 1.6rem;
+    /* padding-bottom: 80px; */
+  }
+  
+  .home-melhor-clinica {
+    width: 80% !important;
+  }
+  .home-melhor-clinica-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+}
+

@@ -1,0 +1,185 @@
+
+.contatos-section {
+    position: relative;
+    /* background: url('../images/presdents/slider/foto1.jpeg') center top no-repeat; */
+    /* background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; */
+    /* height: 200px; */
+    /* box-shadow: inset 0px 0px 1px rgba(0,0,0,0.5); */
+}
+
+
+
+.contatos {
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1084px;
+    /* border-radius: 0 0 50px 50px; */
+    text-align: center;
+    /* background-color: rgba(51, 120, 178, 0.800); */
+  }
+  
+.contatos-text {
+    /* max-width: 800px; */
+    /* margin-left: 25%; */
+    padding: 44px 0 0 0;
+    text-align: center;
+    color: #081006;
+  }
+  
+.contatos-text p {
+    padding-top: 8px;
+}
+
+
+
+
+.contato-section > .mdl-grid {
+  justify-content: center;
+  flex-grow: 1;
+  padding: 50px 0 0 0;
+} 
+
+.contato-section-content > .mdl-grid {
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0px 0 0 0;
+} 
+
+.contato-section {
+  background: url('../images/presdents/slider/foto2.jpeg') center top no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  /* height: 400px; */
+  background-attachment: fixed;
+  background-color: white;
+  
+}
+.contato-form-section .agende-contato-section-title { 
+  margin-bottom: 50px;
+  color:rgb(192, 32, 32)
+}
+.contato-form-section form .mdl-textfield .mdl-textfield__label {
+  color:rgba(23, 48, 156, 0.8) !important;
+}
+.contato-form-section form .mdl-textfield .mdl-textfield__input {
+  border-bottom: 1px solid rgba(56, 135, 198, 0.8) !important;
+}
+.contato-form-section form .mdl-textfield {
+  width: 100% !important;
+  /* margin: 0 auto */
+}
+.contato-form-section form {
+  max-width: 80%;
+  margin: 0 auto;
+  
+}
+.contato-form-section {
+  padding: 60px 0 10px 0;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 80px 80px 0 0;
+  background-color: #fff;
+  /* background-color: rgba(82, 20, 16, 0.7); */
+}
+.contato-section-content .location-icon {
+  width: 68px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.contato-section-content .whatsapp-icon {
+  width: 50px;
+  object-fit: fill;
+}
+.contato-section-content a {
+  text-decoration: none;
+}
+.contato-section-content hr{
+  border: none;
+  width: 68%;
+}
+.contato-section-content {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin: 0 auto;
+  display: flex;
+  border-radius: 80px 80px 0 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 600px;
+  padding: 60px 10px;
+  background-color: #fff;
+  /* background-color: rgba(26, 63, 101, 0.7); */
+}
+.contato-section-title {
+  /* max-width: 800px; */
+  margin-bottom: 50px;
+  color: rgba(26, 63, 101, 1);
+  /* font-size: 3rem; */
+  /* margin-left: 25%; */
+  /* padding: 24px; */
+  text-transform: uppercase;
+  text-align: center;
+  /* color: white; */
+}
+
+  .contato-section-text2 {
+    
+    color: #20431B;
+   }
+
+  .contato-section-text {
+    padding-top: 12px;
+    /* direction: ltr; */
+    text-align:center;
+    /* font-size: 2rem; */
+    color: #285122;
+  }
+
+
+
+
+
+  
+  
+/**** Mobile layout ****/
+
+@media (min-width: 0px) and (max-width: 425px) {
+  
+  .contato-section-content {
+    border-radius: 0;
+  }
+  .contato-section-title {
+    font-size: 2.4rem;;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  
+  .contato-section-content {
+    border-radius: 0;
+  }
+  .contato-section-title {
+    font-size: 2.8rem;;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  
+  .contato-section-content {
+    border-radius: 0;
+  }
+  
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  
+}
+
+@media (min-width: 1025px) {
+  
+}
