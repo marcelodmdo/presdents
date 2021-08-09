@@ -40,7 +40,7 @@
    <div style="  padding: 40px; width: 100%;">
       <div style=" max-width: 800px; width: auto; margin: 0 auto;">
          <div style=" padding: 20px; text-align: center;">
-            <img src="https://presidenteclinicadafamilia.com.br/beta/public/images/presdents/logo-v1.png"/>
+            <img style="width: 260px" src="https://presidenteclinicadafamilia.com.br/beta/public/images/presdents/logo-v1.png"/>
          </div>
          <hr style="margin: 20px auto; width: 60%; border: none; height: 1px; background-color: #3082C7; color: #3082C7; " />
          <div style="padding: 20px; text-align: center;">
