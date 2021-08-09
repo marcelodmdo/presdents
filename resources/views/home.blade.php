@@ -1,7 +1,7 @@
 
 @extends('layouts.material-app')
 
-@section('title', 'Page Title')
+@section('title', 'Home')
 
 @section('sidebar')
     @parent
