@@ -82,6 +82,7 @@
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('tratamentos') }}">Tratamentos</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('about') }}">Quem somos</a>
             <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('institutional') }}">Institucional</a> -->
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('materiais') }}">Materiais</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('agendamentos') }}">Agendamentos</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('contato') }}">Contato</a>
             <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
@@ -114,6 +115,7 @@
         <a class="mdl-navigation__link" href="{{ route('tratamentos') }}">Tratamentos</a>
         <a class="mdl-navigation__link" href="{{ route('about') }}">Quem somos</a>
         <!-- <a class="mdl-navigation__link" href="{{ route('institutional') }}">Institucional</a> -->
+        <a class="mdl-navigation__link" href="{{ route('materiais') }}">Materiais</a>
         <a class="mdl-navigation__link" href="{{ route('agendamentos') }}">Agendamentos</a>
         <a class="mdl-navigation__link" href="{{ route('contato') }}">Contato</a>
         <!-- <a class="mdl-navigation__link" href="">Auto</a>
@@ -166,7 +168,7 @@
                 +55 31 9 9616-3022
               </li>
               <li>
-                Rua Milton Dias, 41 - Jardim Vitória <br />
+                Rua Milton Dias, 371 - Jardim Vitória <br />
                 Belo Horizonte - Minas Gerais
               </li>
               <li>
@@ -199,6 +201,9 @@
                   </li>
                   <li>
                     <a href="{{ url('about')}}">A Presdents</a>
+                  </li>
+                  <li>
+                    <a href="{{ url('materiais')}}">Materiais</a>
                   </li>
                   <li>
                     <a href="{{ url('agendamentos')}}">Agendamentos</a>

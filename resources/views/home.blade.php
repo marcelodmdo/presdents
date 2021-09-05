@@ -199,7 +199,7 @@
     <div class="mdl-grid mdl-typography--font-light">
       <div style="" class="left-side mdl-typography--text-right mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
         <div class="address-street mdl-typography--font-light">
-          Rua Milton Dias, 41 - Jardim Vitória
+          Rua Milton Dias, 371 - Jardim Vitória
         </div>
         <div class="address-street-city mdl-typography--font-light">
           Belo Horizonte - Minas Gerais

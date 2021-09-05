@@ -28,6 +28,10 @@ Route::get('/quem-somos', function () {
     return view('about');
 })->name('about');
 
+// Route::get('/materiais', function () {
+//     return view('materiais');
+// })->name('materiais');
+
 Route::get('/institutional', function () {
     return view('institutional');
 })->name('institutional');
@@ -57,3 +61,4 @@ Route::get('/agendar', function () {
 })->name('agendar');
 
 Route::post('/enviar-contato', 'ContatoController@enviar');
+Route::get('/materiais', 'MateriaisController@index')->name('materiais');
