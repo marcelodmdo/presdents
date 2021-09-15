@@ -462,11 +462,11 @@ a img{
 
 
     .agende-contato-section {
-      background: url('../images/presdents/slider/foto2.jpeg') center top no-repeat;
+      /* background: url('../images/presdents/slider/foto2.jpeg') center top no-repeat;
       background-size: cover;
       background-position: center bottom;
-      /* height: 400px; */
-      background-attachment: fixed;
+      height: 400px;
+      background-attachment: fixed; */
       
     }
     .agende-contato-form-section .agende-contato-section-title { 

@@ -62,14 +62,15 @@
                 @foreach($materiais as $material)
                 <div class="demo-card-wide mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
                   <div class="mdl-card__title" style="background: url('{{ url('public/images/presdents/slider/foto0-cropped.jpg') }}') center center">
-                    <h2 class="mdl-card__title-text" style="color: #333">{{$material->titulo}}</h2>
+                    <h2 class="mdl-card__title-text" style="color: #333">{{$material['titulo']}}</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                    @if(isset($material['exerpt']))
+                    {!!$material['exerpt']!!}
+                    @endif
                   </div>
                   <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('materiais/' . $material->slug) }}">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('materiais/' . $material['slug']) }}">
                       Leia mais
                     </a>
                   </div>

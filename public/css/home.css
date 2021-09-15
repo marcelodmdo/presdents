@@ -472,13 +472,13 @@
 .home-meta-section {
   position: relative;
   /* background: url('../images/presdents/slider/foto1.jpeg') center top no-repeat; */
-  background-image: url("../images/presdents/foto03.jpeg");
+  /* background-image: url("../images/presdents/foto03.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat, repeat-y;
-  background-size: cover;
+  background-size: cover; */
   /* background-attachment: fixed; */
-  background-position: top 30% center;
-  height: 75vh;
+  /* background-position: top 30% center; */
+  height: 0px;
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -512,7 +512,27 @@
     color: #86211C;
   }
 
+  .home-valores-contato-section{
+    margin-top: 150px;
+  }
+  
+  @media (min-width: 0px) and (max-width: 375px) {
+    .home-valores-contato-section{
+      margin-top: 320px;
+    }
+  }
 
+  @media (min-width: 376px) and (max-width: 768px) {
+    .home-valores-contato-section{
+      margin-top: 235px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 900px) {
+    .home-valores-contato-section{
+      margin-top: 200px;
+    }
+  }
   .home-valores-contato-section-content {
     /* position: absolute; */
     /* bottom: 0; */
@@ -565,6 +585,19 @@
   .home-valores-contato-form-section form {
     max-width: 60%;
     margin: 0 auto
+  }
+  @media (min-width: 0px) and (max-width: 425px) {
+    .home-valores-contato-form-section form {
+      max-width: unset;
+    }
+  }
+
+  @media (min-width: 426px) and (max-width: 768px) {
+    
+  }
+
+  @media (min-width: 769px) and (max-width: 900px) {
+    
   }
   .home-valores-contato-form-section {
     padding: 40px 20px;

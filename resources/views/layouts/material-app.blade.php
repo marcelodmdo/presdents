@@ -83,7 +83,7 @@
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('about') }}">Quem somos</a>
             <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('institutional') }}">Institucional</a> -->
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('materiais') }}">Materiais</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('agendamentos') }}">Agendamentos</a>
+            <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('agendamentos') }}">Agendamentos</a> -->
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('contato') }}">Contato</a>
             <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
@@ -116,7 +116,7 @@
         <a class="mdl-navigation__link" href="{{ route('about') }}">Quem somos</a>
         <!-- <a class="mdl-navigation__link" href="{{ route('institutional') }}">Institucional</a> -->
         <a class="mdl-navigation__link" href="{{ route('materiais') }}">Materiais</a>
-        <a class="mdl-navigation__link" href="{{ route('agendamentos') }}">Agendamentos</a>
+        <!-- <a class="mdl-navigation__link" href="{{ route('agendamentos') }}">Agendamentos</a> -->
         <a class="mdl-navigation__link" href="{{ route('contato') }}">Contato</a>
         <!-- <a class="mdl-navigation__link" href="">Auto</a>
         <a class="mdl-navigation__link" href="">One</a>
@@ -165,7 +165,7 @@
           <div class="mdl-grid" style="width: 90%; margin: 0 auto;">
             <ul class="tel-addr mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <li>
-                +55 31 9 9616-3022
+                31 9 9616-3022
               </li>
               <li>
                 Rua Milton Dias, 371 - Jardim Vitória <br />
@@ -200,14 +200,14 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="{{ url('about')}}">A Presdents</a>
+                    <a href="{{ route('about')}}">A Presdents</a>
                   </li>
                   <li>
                     <a href="{{ url('materiais')}}">Materiais</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="{{ url('agendamentos')}}">Agendamentos</a>
-                  </li>
+                  </li> -->
                   <li>
                   <a href="{{ url('contato')}}">Contato</a>
                   </li>
