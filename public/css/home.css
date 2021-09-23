@@ -521,7 +521,9 @@
       margin-top: 320px;
     }
   }
-
+  h1 {
+    font-size: calc(1.5rem + 3vw) !important;
+  }
   @media (min-width: 376px) and (max-width: 768px) {
     .home-valores-contato-section{
       margin-top: 235px;

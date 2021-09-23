@@ -62,3 +62,4 @@ Route::get('/agendar', function () {
 
 Route::post('/enviar-contato', 'ContatoController@enviar');
 Route::get('/materiais', 'MateriaisController@index')->name('materiais');
+Route::get('/materiais/{any}', 'MateriaisController@reading');
