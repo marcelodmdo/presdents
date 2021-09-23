@@ -43,56 +43,40 @@
         </div>
 
 
-        <div class="valores-section">
-          <div class="mdl-grid ">
-            <div class="valores-section-content mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-              <!-- Simple Textfield -->
-              <div class="valores-section-title mdl-typography--display-2 mdl-typography--font-thin">Entenda melhor seus dentes!</div>
-              <!-- <p class="valores-section-text mdl-typography--headline mdl-typography--font-light">
-                Com nosso conteúdo rico, materemos v
-              </p>
-              <p class="valores-section-text mdl-typography--headline mdl-typography--font-light">
-                Realizamos nossos atedimentos com clareza, empatia e lealdade, mantendo e perpetuando, assim, respeito e confiança dos nossos pacientes.
-              </p>
-              <p class="valores-section-text2 mdl-typography--subhead mdl-typography--font-medium ">
-                Utilizamos os melhores materiais odontológicos disponíveis no mercado.
-              </p> -->
-              <div class="mdl-grid">
-                <!-- Wide card with share menu button -->
-                @foreach($materiais as $material)
-                @if(isset($material['image']))
-                  @php
-                    $image = url('public/images/materiais/'.$material['image'])
-                  @endphp
-                @else
-                  @php
-                    $image = url('public/images/presdents/slider/foto0-cropped.jpg')
-                  @endphp
+        <div class="materiais-section">
+          <div class="mdl-grid">
+            <!-- Wide card with share menu button -->
+            @foreach($materiais as $material)
+            @if(isset($material['image']))
+              @php
+                $image = url('public/images/materiais/'.$material['image'])
+              @endphp
+            @else
+              @php
+                $image = url('public/images/presdents/slider/foto0-cropped.jpg')
+              @endphp
+            @endif
+            <div class="demo-card-wide mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title" style="background: url({{ $image }}) center center; background-size: cover; ">
+                <h2 class="mdl-card__title-text" style=""><a href="{{ url('materiais/' . $material['slug']) }}">{{$material['titulo']}}</a></h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                @if(isset($material['exerpt']))
+                {!!$material['exerpt']!!}
                 @endif
-                <div class="demo-card-wide mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
-                  <div class="mdl-card__title" style="background: url({{ $image }}) center center; background-size: cover; ">
-                    <h2 class="mdl-card__title-text" style=""><a href="{{ url('materiais/' . $material['slug']) }}">{{$material['titulo']}}</a></h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    @if(isset($material['exerpt']))
-                    {!!$material['exerpt']!!}
-                    @endif
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('materiais/' . $material['slug']) }}">
-                      Leia mais
-                    </a>
-                  </div>
-                  <div class="mdl-card__menu">
-                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                      <i class="material-icons">share</i>
-                    </button>
-                  </div>
-                </div>
-                @endforeach
-                
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('materiais/' . $material['slug']) }}">
+                  Leia mais
+                </a>
+              </div>
+              <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                  <i class="material-icons">share</i>
+                </button>
               </div>
             </div>
+            @endforeach
             
           </div>
         </div>
