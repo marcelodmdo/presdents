@@ -571,7 +571,7 @@
   </div>
   <div class="map-section">
     <div class="android-section-title mdl-typography--text-center mdl-typography--display-1-color-contrast">Localização</div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1151.0945535154058!2d-43.88315983284927!3d-19.856899607393597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69b4be127f54b%3A0x686081615ed55bb2!2sR.%20Milton%20Dias%2C%2041%20-%20Jardim%20Vitoria%2C%20Belo%20Horizonte%20-%20MG%2C%2031970-230!5e1!3m2!1sen!2sbr!4v1626038938821!5m2!1sen!2sbr" width="100%" style="height: 60vh;" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1326.7214191252965!2d-43.881923648336084!3d-19.85962513330685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69b4ed1f28eb1%3A0x6b9cde325f533404!2sR.%20Milton%20Dias%2C%20371%20-%20Jardim%20Vitoria%2C%20Belo%20Horizonte%20-%20MG%2C%2031970-230!5e0!3m2!1sen!2sbr!4v1633400703901!5m2!1sen!2sbr" width="100%" style="height: 60vh;" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
   <!-- <div class="android-more-section">
     <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>

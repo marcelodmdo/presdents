@@ -230,7 +230,7 @@
           <p class="" style="margin-top: 10px;">
             CRO: MG46761 | 
             <br>
-            CRO da Clínica: 00000000
+            CRO da Clínica: 8005
           </p>  
         </div>
         <!-- <div class="mdl-mega-footer--bottom-section">
