@@ -228,7 +228,12 @@
             <h4 class="mdl-card__title-text">Restauração / Obturação</h4>
         </div>
         <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
+          <p class="mdl-typography--font-light mdl-typography--subhead">
+            É um procedimento realizado pelo dentista que tem como objetivo tratar e recuperar danos( lesão de cárie,fratura, manchas, erosão,desgaste ) causado ao dente .
+          </p>
+          <p class="mdl-typography--font-light mdl-typography--subhead">
+            As restaurações são feitas na maioria dos casos com resinas compostas que é um material com a mesma cor do dente.
+          </p>
         </div>
         <div class="mdl-card__actions">
             <a class="presdents-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -246,7 +251,20 @@
             <h4 class="mdl-card__title-text">Clareamento dental / Profilaxia</h4>
         </div>
         <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
+          <p  class="mdl-typography--font-light mdl-typography--subhead">
+            É um tratamento realizado sobre a superfície do dente no esmalte que tem a função de apresentar um aspecto de dente mas branco.
+          </p>
+          <p  class="mdl-typography--font-light mdl-typography--subhead">
+            O tratamento poderá ser realizado basicamente de duas maneiras: 
+              <ol>
+                <li>no consultório o profissional dentista utilizará um gel clareador ativado por uma fonte de luz (LASER) em torno de 2 horas de procedimento.</li>
+                <li>o clareamento feito em casa, é um tratamento que se encaixa na rotina do paciente.</li>
+              </ol>
+          </p>
+          
+          <p  class="mdl-typography--font-light mdl-typography--subhead">
+            Utilizando uma moldeira confeccionada que se adapta arcada dentária juntamente com o gel clareador. O período de tratamento varia de acordo com a necessidade de cada paciente.
+          </p>
         </div>
         <div class="mdl-card__actions">
             <a class="presdents-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -264,7 +282,12 @@
             <h4 class="mdl-card__title-text">Aparelho Ortodôntico</h4>
         </div>
         <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
+          <p class="mdl-typography--font-light mdl-typography--subhead">
+            A função do tratamento ortodôntico é corrigir os dentes tortos e desalinhados devolvendo assim a cavidade oral uma oclusão dentária ajustada e saudável que é quando os dentes superiores e inferiores se tocam o mais correto distribuindo a força mastigatória ao fechar a boca.
+          </p>
+          <p class="mdl-typography--font-light mdl-typography--subhead">
+            É importante entender que o tempo de uso do aparelho depende da gravidade do problema de cada paciente, e que as manutenções periódicas com o dentista é o que garante a eficácia do tratamento.
+          </p>
         </div>
         <div class="mdl-card__actions">
             <a class="presdents-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -282,7 +305,9 @@
             <h4 class="mdl-card__title-text">Implante dentário</h4>
         </div>
         <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
+          <p class="mdl-typography--font-light mdl-typography--subhead">
+          Os implantes dentários são dispositivos tipo um parafuso feitos em titânio que serve para substituir a estrutura raiz do dente o que dá suporte a uma reabilitação de uma prótese devolvendo assim a função mastigatória e uma aparência estética melhor.
+          </p>
         </div>
         <div class="mdl-card__actions">
             <a class="presdents-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
