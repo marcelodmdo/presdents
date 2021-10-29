@@ -701,27 +701,6 @@ a img{
     color: black;
     height: auto;
   }
-
-  .android-card-container .mdl-card:hover .mdl-card__supporting-text {
-    max-height: unset !important;
-    transform: scale(1.3);
-    z-index: 100000;
-    overflow: visible;
-    background-color: #fff;
-    border: solid 1px rgb(171, 220, 235);
-    border-radius: 18px;
-    width: 80% !important;
-    padding-bottom: inherit;
-  }
-
-  .android-card-container .mdl-card:hover  {
-    max-height: auto;
-    overflow: visible;
-    background-color: #fff;
-    padding-bottom: inherit;
-    z-index: 1000000;
-    cursor: pointer;
-  }
   .android-card-container .mdl-card {
     max-height: 600px;
     position: relative;

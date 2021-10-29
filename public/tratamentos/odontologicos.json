@@ -1,0 +1,70 @@
+[
+    {
+        "titulo": "Estomatologia",
+        "slug": "estomatologia",
+        "content": [
+            "A estomatologia é uma especialidade na área da odontologia que tem como finalidade prevenir diagnosticar e tratar as doenças e lesões (infecção, úlceras, inflamação,cistos, nódulos)que se manifestam na cavidade oral."],
+        "image": "estomatologia-sm.jpg"
+    },
+    {
+        "titulo": "Restauração/Obturação",
+        "slug": "restauracao-obturacao",
+        "content": [
+            "É um procedimento realizado pelo dentista que tem como objetivo tratar e recuperar danos( lesão de cárie,fratura, manchas, erosão,desgaste ) causado ao dente.",
+            "As restaurações são feitas na maioria dos casos com resinas compostas que é um material com a mesma cor do dente."
+        ],
+        "image": "restauracao-obturacao-sm.jpg"
+    },
+    {
+        "titulo": "Faceta dental",
+        "slug": "faceta-dental",
+        "content": [
+            "As facetas são procedimentos odontológico destinados a  cobrir os dentes para melhorar sua função e a estética. Podem ser confeccionadas em resina fotopolimerizável ou em porcelana."
+        ],
+        "image": "faceta-dental-sm.jpg"
+    },
+    {
+        "titulo": "Clareamento dental / Profilaxia",
+        "slug": "clareamento-dental-profilaxia",
+        "content": [
+            "É um tratamento realizado sobre a superfície do dente no esmalte que tem a função de apresentar um aspecto de dente mas branco.",
+            "O tratamento poderá ser realizado basicamente de duas maneiras: 1 no consultório o profissional dentista utilizará um gel clareador ativado por uma fonte de luz (LASER)em torno de 2 horas de procedimento.",
+            "2 o clareamento feito em casa, é um tratamento que se encaixa na rotina do paciente.",
+            "Utilizando uma moldeira confeccionada que se adapta arcada dentária juntamente com o gel clareador. O período de tratamento varia de acordo com a necessidade de cada paciente."
+        ],
+        "image": "dental-cleaning-prophylaxis-sm.jpg"
+    },
+    {
+        "titulo": "Aparelho ortodôntico",
+        "slug": "aparelho-ortodontico",
+        "content": [
+            "A função do tratamento ortodôntico é corrigir os dentes tortos e desalinhados devolvendo assim a cavidade oral uma oclusão dentária ajustada e saudável que é quando os dentes superiores e inferiores se tocam o mais correto distribuindo a força mastigatória ao fechar a boca.",
+            "É importante entender que o tempo de uso do aparelho depende da gravidade do problema de cada paciente, e que as manutenções periódicas com o dentista é o que garante a eficácia do tratamento."
+        ],
+        "image": "dental-appliance-sm.jpg"
+    },
+    {
+        "titulo": "Implante dentário",
+        "slug": "implante-dentario",
+        "content": [
+            "Os implantes dentários são dispositivos tipo um parafuso feitos em titânio que serve para substituir a estrutura raiz do dente o que dá suporte a uma reabilitação de uma prótese devolvendo assim a função mastigatória e uma aparência estética melhor."
+        ],
+        "image": "dental-implant-sm.png"
+    },
+    {
+        "titulo": "Endodontia - Tratamento de canal",
+        "slug": "endodontia-tratamento-de-canal",
+        "content": [
+            "O tratamento de canal ou endodontia é o procedimento aonde se faz a remoção da polpa (do nervo do dente). Depois que a polpa é contaminada por bactéria ficando danificada ou necrosada e feito a sua remoção, no espaço restante aonde ficava o nervo faz adaptação e um preenchimento o que sela o canal da raiz do dente."
+        ],
+        "image": "endodontia-tratamento-de-canal-sm.jpg"
+    },
+    {
+        "titulo": "Exodontia",
+        "slug": "exodontia",
+        "content": [
+            "A exodontia é o processo cirúrgico de extração do dente ou seja é a remoção, o tirar ou o arrancar do dente em relação ao alvéolo."
+        ],
+        "image":"dental-removal-sm.jpg"
+    }
+]

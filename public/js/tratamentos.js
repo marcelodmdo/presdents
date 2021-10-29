@@ -67,4 +67,24 @@ $(document).ready(function(){
         }
       ]
     });
+
+
+    $(".tratamentos-section .mdl-card").on("click", function() {
+      var scrollTop     = $(window).scrollTop(),
+            elementOffset = $(this).offset().top,
+            distance      = (elementOffset - scrollTop);
+
+      var d = $(this)[0]
+      console.log(d)
+      console.log(elementOffset)
+      console.log(scrollTop)
+      console.log(distance)
+      // $("body").animate({
+      //     scrollTop: $(".tratamentos-section").offset().top
+      // }, 1000);
+      // var elmnt = document.getElementsByClassName("tratamentos-section")[0];
+      // console.log(elmnt)
+      d.scrollIntoView({ behavior: 'smooth', block: 'end'});
+    
+    })
   });

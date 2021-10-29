@@ -1,17 +1,16 @@
-
 @extends('layouts.material-app')
 
 @section('title', 'Tratamentos')
 
 @section('sidebar')
-    @parent
+@parent
 
-    <!-- <p>This is appended to the master sidebar.</p> -->
+<!-- <p>This is appended to the master sidebar.</p> -->
 @endsection
 
 @section('content')
 <a name="top"></a>
-        <!-- <div class="android-be-together-section mdl-typography--text-center">
+<!-- <div class="android-be-together-section mdl-typography--text-center">
           <div class="logo-font android-slogan">be together. not the same.</div>
           <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
           <div class="logo-font android-create-character">
@@ -24,11 +23,12 @@
             </button>
           </a>
         </div> -->
-        <div class="custom-header-section mdl-typography--text-center">
-          
-          <div class="custom-header-style1" style="background-position: left center; background-image: url({{ url('public/images/presdents/tratamentos2-cropped.jpg') }})">
-            <div class="content-custom-header-section" style="border:solid 0px;">
-              <div class="content-box red-shader">
+<div class="custom-header-section mdl-typography--text-center">
+
+    <div class="custom-header-style1"
+        style="background-position: left center; background-image: url({{ url('public/images/presdents/tratamentos2-cropped.jpg') }})">
+        <div class="content-custom-header-section" style="border:solid 0px;">
+            <div class="content-box red-shader">
                 <h4>Tratamentos</h4>
                 <!-- <div class=" mdl-typography--text-center">
                   <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -36,26 +36,54 @@
                     <i class="material-icons">chevron_right</i>
                   </a>
                 </div> -->
-                
-              </div>
-            </div>
-            <!-- <img src="{{ url('public/images/presdents/slider/foto1.jpeg') }}" /> -->
-          </div>
-        </div>
-        
-        
-        <div class="tratamentos-header-section">
-          
 
-          <div class="mdl-grid">
-            <div style="" class="left-side mdl-typography--text-left mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone">
-              <div class="tratamentos-subtitle">
+            </div>
+        </div>
+        <!-- <img src="{{ url('public/images/presdents/slider/foto1.jpeg') }}" /> -->
+    </div>
+</div>
+
+
+<div class="tratamentos-header-section">
+
+
+    <div class="mdl-grid">
+        <div style=""
+            class="left-side mdl-typography--text-left mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone">
+            <div class="tratamentos-subtitle">
                 <h3 class=" mdl-typography--font-thin">Odontológicos</h3>
-              </div>
-              <div class="tratamentos-section">
+            </div>
+            <div class="tratamentos-section">
                 <!-- <div class="tratamento-section-title mdl-typography--text-center mdl-typography--display-1-color-contrast">Tratamentos</div> -->
                 <div class="android-card-container mdl-grid">
-                  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
+
+                    @foreach($tratamentos["odonto"] as $tratamento)
+                    <div
+                        class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
+                        <div class="mdl-card__media">
+                            <img src="{{ url('public/images/tratamentos/') }}/{{$tratamento['image']}}">
+                        </div>
+                        <div class="mdl-card__title">
+                            <h4 class="mdl-card__title-text">{{$tratamento["titulo"]}}</h4>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <?php 
+                      
+                      ?>
+                            {!! $tratamento['exerpt'] !!}
+                            <!-- <span class="mdl-typography--font-light mdl-typography--subhead"> -->
+                            <!-- </span> -->
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a class="presdents-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+                                href="{{ url('tratamento') }}/odontologicos/{{$tratamento['slug'] }}">
+                                Mais informações
+                                <i class="material-icons">chevron_right</i>
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+                    <?php /*<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
                     <div class="mdl-card__media">
                       <img src="{{ url('public/images/tratamentos/restauracao-obturacao-sm.jpg') }}">
                     </div>
@@ -189,18 +217,46 @@
                         <i class="material-icons">chevron_right</i>
                       </a>
                     </div>
-                  </div>
+                  </div> */ ?>
                 </div>
-                
-              </div>
+
             </div>
-            <div style="background-color: #fff2f1" class="right-side mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone">
-              <div class="tratamentos-subtitle">
+        </div>
+        <div style="background-color: #fff2f1"
+            class="right-side mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone">
+            <div class="tratamentos-subtitle">
                 <h3 class=" mdl-typography--font-thin">Estéticos Específico Facial</h3>
-              </div>
-              <div class="tratamentos-section">
+            </div>
+            <div class="tratamentos-section">
                 <!-- <div class="tratamento-section-title mdl-typography--text-center mdl-typography--display-1-color-contrast">Tratamentos</div> -->
                 <div class="android-card-container mdl-grid">
+                    @foreach($tratamentos["estetico"] as $tratamento)
+                    <div
+                        class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
+                        <div class="mdl-card__media">
+                            <img src="{{ url('public/images/tratamentos/') }}/{{$tratamento['image']}}">
+                        </div>
+                        <div class="mdl-card__title">
+                            <h4 class="mdl-card__title-text">{{$tratamento["titulo"]}}</h4>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <?php 
+                      
+                      ?>
+                            {!! $tratamento['exerpt'] !!}
+                            <!-- <span class="mdl-typography--font-light mdl-typography--subhead"> -->
+                            <!-- </span> -->
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a class="presdents-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+                                href="{{ url('tratamento') }}/estetico/{{$tratamento['slug'] }}">
+                                Mais informações
+                                <i class="material-icons">chevron_right</i>
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+                    <?php /*
                   <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
                     <div class="mdl-card__media">
                       <img src="{{ url('public/images/tratamentos/fios-pdo.png') }}">
@@ -299,33 +355,39 @@
                         <i class="material-icons">chevron_right</i>
                       </a>
                     </div>
-                  </div>
+                  </div> */ ?>
 
-                  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
-                    <div class="mdl-card__media">
-                      <img src="{{ url('public/images/calendar.jpg') }}">
+                    <div
+                        class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--8-col-phone mdl-card mdl-shadow--3dp">
+                        <div class="mdl-card__media">
+                            <img src="{{ url('public/images/calendar.jpg') }}">
+                        </div>
+                        <div class="agende mdl-card__title mdl-typography--text-center">
+                            <h4
+                                class="mdl-card__title-text mdl-typography--text-uppercase  mdl-typography--text-center">
+                                AGENDE UMA AVALIAÇÃO</h4>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <span
+                                class="mdl-typography--font-light mdl-typography--subhead mdl-typography--text-center">Texto
+                                exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a class="mdl-button mdl-js-button mdl-typography--text-uppercase"
+                                href="{{ route('agendar') }}" target="_blank">
+                                Agende agora
+                                <i class="material-icons">chevron_right</i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="agende mdl-card__title mdl-typography--text-center">
-                      <h4 class="mdl-card__title-text mdl-typography--text-uppercase  mdl-typography--text-center">AGENDE UMA AVALIAÇÃO</h4>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                      <span class="mdl-typography--font-light mdl-typography--subhead mdl-typography--text-center">Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
-                    </div>
-                    <div class="mdl-card__actions">
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ route('agendar') }}" target="_blank">
-                      Agende agora
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                    </div>
-                  </div>
                 </div>
-                
-              </div>
+
             </div>
-            <!-- <div style="background-color: pink" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">2 (4 phone)</div> -->
-          </div>
         </div>
-        
+        <!-- <div style="background-color: pink" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">2 (4 phone)</div> -->
+    </div>
+</div>
+<?php /*
         <div class="tratamentos-slider-section">
           <div class="tratamentos-slider">
             
@@ -369,328 +431,369 @@
             <div><img src="{{ url('public/images/presdents/slider/foto3.jpeg') }}" /></div> -->
           </div>
         </div>
+        */ ?>
+<div class=" mdl-typography--text-center">
+    <!-- Accent-colored raised button with ripple -->
+    <a href="{{ route('agendar') }}" target="_blank"
+        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect agendar-threatments-btn">
+        Agende sua avaliação agora <i class="material-icons">event</i>
+    </a>
+</div>
+<div class="tratamentos-list-section mdl-typography--text-left">
+    <div class="mdl-grid">
+        <div class="tratamentos-list-left mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <ul class="tratamentos-list mdl-list">
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Aplicação de Flúor</span>
+                        <span class="mdl-list__item-text-body">
+                            O flúor é um elemento químico muito importante para evitar a perda de minerais pelos dentes
+                            e impedir o desgaste causado por bactérias que formam a cárie e por substâncias ácidas
+                            presentes na saliva e na alimentação.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
 
-        <div class=" mdl-typography--text-center">
-          <!-- Accent-colored raised button with ripple -->
-          <a href="{{ route('agendar') }}" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect agendar-threatments-btn">
-            Agende sua avaliação agora <i class="material-icons">event</i>
-          </a>
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Placa Bruxismo</span>
+                        <span class="mdl-list__item-text-body">
+                            Também conhecida como placa de mordida ou miorrelaxante, a placa de bruxismo é um
+                            dispositivo móvel que se ajusta perfeitamente sobre a superfície do seu sorriso tanto na
+                            região superior ou inferior.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Tratamento em criaças / Odontopediatria</span>
+                        <span class="mdl-list__item-text-body">
+                            Odontopediatria é a especialidade que tem como objetivo o diagnóstico, a prevenção, o
+                            tratamento e o controle dos problemas de saúde bucal do bebê, da criança e do adolescente
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Enxerto Ósseo</span>
+                        <span class="mdl-list__item-text-body">
+                            O enxerto ósseo dentário é um procedimento cirúrgico que consiste em retirar um fragmento de
+                            osso de um local adequado que pode ser a mandíbula do paciente, por exemplo, e implantá-lo
+                            no local que se quer fazer o reparo.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Dentadura Fixa</span>
+                        <span class="mdl-list__item-text-body">
+                            A dentadura fixa ou prótese tipo protocolo é uma das melhores soluções estéticas e
+                            funcionais para pacientes que não têm os dentes. Apesar de ser chamada de dentadura, esse
+                            item é muito diferente da prótese móvel mais popular.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Prótese Flexit / Silicone</span>
+                        <span class="mdl-list__item-text-body">
+                            A prótese flexível é uma alternativa às próteses parciais removíveis ou dentaduras. São
+                            fabricadas com o material Silicone, uma resina flexível que é utilizada como base para
+                            próteses e ajuda a corrigir falhas no acrílico convencional.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Prótese Roach / Metal</span>
+                        <span class="mdl-list__item-text-body">
+                            É uma prótese que cobre uma porção menor da boca, devido à robustez da sua parte metálica. A
+                            composição metálica utilizada é uma liga não preciosa de crômio-cobalto ou crômio-níquel.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                      <i class="material-icons">chevron_right</i>
+                    </button> -->
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                      Leia mais
+                      <i class="material-icons">chevron_right</i>
+                    </a> -->
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
+                    </span>
+                </li>
+
+
+
+            </ul>
         </div>
-        <div class="tratamentos-list-section mdl-typography--text-left">
-          <div class="mdl-grid">
-            <div class="tratamentos-list-left mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-              <ul class="tratamentos-list mdl-list">
+        <div class="tratamentos-list-right mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <ul class="tratamentos-list mdl-list">
                 <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Aplicação de Flúor</span>
-                    <span class="mdl-list__item-text-body">
-                    O flúor é um elemento químico muito importante para evitar a perda de minerais pelos dentes e impedir o desgaste causado por bactérias que formam a cárie e por substâncias ácidas presentes na saliva e na alimentação. 
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Prótese Acrílica</span>
+                        <span class="mdl-list__item-text-body">
+                            O material é resistente, mas requer cuidados com a limpeza e desgaste. É recomendada para
+                            pessoas que têm poucos ou nenhum dente natural.
+                        </span>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Placa Bruxismo</span>
-                    <span class="mdl-list__item-text-body">
-                    Também conhecida como placa de mordida ou miorrelaxante, a placa de bruxismo é um dispositivo móvel que se ajusta perfeitamente sobre a superfície do seu sorriso tanto na região superior ou inferior.
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Dentaduras / Prótese Total</span>
+                        <span class="mdl-list__item-text-body">
+                            A prótese total convencional é colocada em sua boca depois que os dentes remanescentes foram
+                            extraídos e os tecidos cicatrizarem. A cicatrização pode demorar vários meses durante os
+                            quais você poderá ficar sem dentes.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Tratamento em criaças / Odontopediatria</span>
-                    <span class="mdl-list__item-text-body">
-                    Odontopediatria é a especialidade que tem como objetivo o diagnóstico, a prevenção, o tratamento e o controle dos problemas de saúde bucal do bebê, da criança e do adolescente
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Dentaduras Caracterizadas</span>
+                        <span class="mdl-list__item-text-body">
+                            São próteses personalizadas exclusivamente para o paciente, ou seja nós conseguimos
+                            reproduzir com uma excelente anatomia estética tanto o tecido gengival, quanto a forma e a
+                            cromaticidade dos dentes.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Enxerto Ósseo</span>
-                    <span class="mdl-list__item-text-body">
-                    O enxerto ósseo dentário é um procedimento cirúrgico que consiste em retirar um fragmento de osso de um local adequado que pode ser a mandíbula do paciente, por exemplo, e implantá-lo no local que se quer fazer o reparo.
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Lente de Contato Dental</span>
+                        <span class="mdl-list__item-text-body">
+                            As lentes de contato dental são facetas ou lâminas ultrafinas, com 1 mm de espessura ou
+                            menos, confeccionadas em cerâmica ou resina composta. Elas são aderidas aos dentes com a
+                            intenção de alterar forma, contorno, proporção e cor.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Dentadura Fixa</span>
-                    <span class="mdl-list__item-text-body">
-                    A dentadura fixa ou prótese tipo protocolo é uma das melhores soluções estéticas e funcionais para pacientes que não têm os dentes. Apesar de ser chamada de dentadura, esse item é muito diferente da prótese móvel mais popular.
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Piercing Dental</span>
+                        <span class="mdl-list__item-text-body">
+                            O twinkle ou mais conhecido como piercing dental é um pequeno brilhante, pedrinha, colada no
+                            seu dente, na maioria da vezes ele é colado no canino ou incisivo lateral.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Prótese Flexit / Silicone</span>
-                    <span class="mdl-list__item-text-body">
-                    A prótese flexível é uma alternativa às próteses parciais removíveis ou dentaduras. São fabricadas com o material Silicone, uma resina flexível que é utilizada como base para próteses e ajuda a corrigir falhas no acrílico convencional.
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Caracterização Dental em Ouro e Metal</span>
+                        <span class="mdl-list__item-text-body">
+                            Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Prótese Roach / Metal</span>
-                    <span class="mdl-list__item-text-body">
-                    É uma prótese que cobre uma porção menor da boca, devido à robustez da sua parte metálica. A composição metálica utilizada é uma liga não preciosa de crômio-cobalto ou crômio-níquel.
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
+                </li>
+
+                <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">circle</i>
+                        <span>Tratamento em Idosos / Odontogeriatria</span>
+                        <span class="mdl-list__item-text-body">
+                            Odontogeriatria é a especialidade que se concentra no estudo dos fenômenos decorrentes do
+                            envelhecimento que também têm repercussão na boca e suas estruturas associadas, bem como a
+                            promoção da saúde, o diagnóstico, a prevenção e o tratamento de enfermidades bucais e do
+                            sistema estomatognático do idoso.
+                        </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
                       <i class="material-icons">chevron_right</i>
                     </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                       Leia mais
                       <i class="material-icons">chevron_right</i>
                     </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                
-                
-              </ul>
-            </div>
-            <div class="tratamentos-list-right mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-              <ul class="tratamentos-list mdl-list">
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Prótese Acrílica</span>
-                    <span class="mdl-list__item-text-body">
-                    O material é resistente, mas requer cuidados com a limpeza e desgaste. É recomendada para pessoas que têm poucos ou nenhum dente natural.
+                        <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i
+                                class="material-icons">chevron_right</i></a>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
                 </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Dentaduras / Prótese Total</span>
-                    <span class="mdl-list__item-text-body">
-                    A prótese total convencional é colocada em sua boca depois que os dentes remanescentes foram extraídos e os tecidos cicatrizarem. A cicatrização pode demorar vários meses durante os quais você poderá ficar sem dentes.
-                    </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Dentaduras Caracterizadas</span>
-                    <span class="mdl-list__item-text-body">
-                    São próteses personalizadas exclusivamente para o paciente, ou seja nós conseguimos reproduzir com uma excelente anatomia estética tanto o tecido gengival, quanto a forma e a cromaticidade dos dentes.
-                    </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Lente de Contato Dental</span>
-                    <span class="mdl-list__item-text-body">
-                    As lentes de contato dental são facetas ou lâminas ultrafinas, com 1 mm de espessura ou menos, confeccionadas em cerâmica ou resina composta. Elas são aderidas aos dentes com a intenção de alterar forma, contorno, proporção e cor.
-                    </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Piercing Dental</span>
-                    <span class="mdl-list__item-text-body">
-                    O twinkle ou mais conhecido como piercing dental é um pequeno brilhante, pedrinha, colada no seu dente, na maioria da vezes ele é colado no canino ou incisivo lateral.
-                    </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Caracterização Dental em Ouro e Metal</span>
-                    <span class="mdl-list__item-text-body">
-                    Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo 
-                    </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                
-                <li class="mdl-list__item mdl-list__item--three-line">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">circle</i>
-                    <span>Tratamento em Idosos / Odontogeriatria</span>
-                    <span class="mdl-list__item-text-body">
-                    Odontogeriatria é a especialidade que se concentra no estudo dos fenômenos decorrentes do envelhecimento que também têm repercussão na boca e suas estruturas associadas, bem como a promoção da saúde, o diagnóstico, a prevenção e o tratamento de enfermidades bucais e do sistema estomatognático do idoso.
-                    </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect all-threatments-btn">
-                      <i class="material-icons">chevron_right</i>
-                    </button> -->
-                    <!-- <a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                      Leia mais
-                      <i class="material-icons">chevron_right</i>
-                    </a> -->
-                    <a class="mdl-list__item-secondary-action mdl-button mdl-js-button" href="#"><i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
+            </ul>
         </div>
-        
-        <div class="tratamentos-agende-contato-section">
-          <div class="mdl-grid ">
-            <div class="tratamentos-agende-contato-section-content mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-              <!-- Simple Textfield -->
-              <div class="tratamentos-agende-contato-section-title mdl-typography--display-2 mdl-typography--font-light">Agende sua avaliação</div>
-              <p class="tratamentos-agende-contato-section-text mdl-typography--headline mdl-typography--font-light">
+    </div>
+
+</div>
+
+<div class="tratamentos-agende-contato-section">
+    <div class="mdl-grid ">
+        <div
+            class="tratamentos-agende-contato-section-content mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <!-- Simple Textfield -->
+            <div class="tratamentos-agende-contato-section-title mdl-typography--display-2 mdl-typography--font-light">
+                Agende sua avaliação</div>
+            <p class="tratamentos-agende-contato-section-text mdl-typography--headline mdl-typography--font-light">
                 <!-- Nossa equipe de profissionais competentes de qualificados trabalham com efetividade buscando, acima de tudo, que os sonhos e os objetivos de nossos pacientes sejam conquistados. -->
-                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect agendar-btn1-link" href="{{ route('agendar') }}" target="_blank">
-                  Agendar avaliação&nbsp;<i class="material-icons">chevron_right</i>
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect agendar-btn1-link"
+                    href="{{ route('agendar') }}" target="_blank">
+                    Agendar avaliação&nbsp;<i class="material-icons">chevron_right</i>
                 </a>
-              </p>
-              <!-- <p class="tratamentos-agende-contato-section-text mdl-typography--headline mdl-typography--font-light">
+            </p>
+            <!-- <p class="tratamentos-agende-contato-section-text mdl-typography--headline mdl-typography--font-light">
                 Realizamos nossos atedimentos com clareza, empatia e lealdade, mantendo e perpetuando, assim, respeito e confiança dos nossos pacientes.
               </p> -->
-              
-              <!-- <p class="tratamentos-agende-contato-section-text2 mdl-typography--text-center mdl-typography--subhead mdl-typography--font-medium ">
+
+            <!-- <p class="tratamentos-agende-contato-section-text2 mdl-typography--text-center mdl-typography--subhead mdl-typography--font-medium ">
                 Utilizamos os melhores materiais odontológicos disponíveis no mercado.
               </p> -->
-            </div>
-            <!-- <div class="tratamentos-agende-contato-form-section mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        </div>
+        <!-- <div class="tratamentos-agende-contato-form-section mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               
               <form action="#">
                 <div class="tratamentos-agende-contato-section-title mdl-typography--display-2 mdl-typography--font-light">Fale conosco</div>
@@ -718,10 +821,10 @@
                 </div>
               </form>
             </div> -->
-          </div>
-        </div>
-        
-        <!-- <div class="android-wear-section">
+    </div>
+</div>
+
+<!-- <div class="android-wear-section">
           <div class="android-wear-band">
             <div class="android-wear-band-text">
               <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
@@ -737,7 +840,7 @@
             </div>
           </div>
         </div> -->
-        <!-- <div class="android-customized-section">
+<!-- <div class="android-customized-section">
           <div class="android-customized-section-text">
             <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
             <p class="mdl-typography--font-light">
@@ -748,7 +851,7 @@
           </div>
           <div class="android-customized-section-image"></div>
         </div> -->
-        <!-- <div class="android-more-section">
+<!-- <div class="android-more-section">
           <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
           <div class="android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
@@ -832,8 +935,6 @@
 @section('style')
 <link rel="stylesheet" href="{{ url('public/css/tratamentos.css') }}">
 <style type="text/css">
-
-
 /* #target-container {
 	margin: 1000px auto;
 	width: 300px;
@@ -847,20 +948,19 @@
 } */
 
 #message {
-	position: fixed;
-	background-color: #f1c40f;
-	padding: 10px;
-	bottom: 0;
-  display: none;
-	left: 50%;
-	transform: translateX(-50%);
-	box-sizing: border-box;
-	width: 100%;
-  height: 100px;
-	text-align: center;
-	font-size: 14px;
+    position: fixed;
+    background-color: #f1c40f;
+    padding: 10px;
+    bottom: 0;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
 }
-
 </style>
 @endsection
 

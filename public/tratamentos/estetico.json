@@ -1,0 +1,42 @@
+[
+    {   
+        "titulo": "Fio de PDO",
+        "slug": "fio-de-pdo",
+        "content": [
+            "Os fios de PDO são compostos de polidioxanona, possuem espículas (garras) que promovem a tração e o efeito lifting no rosto, além disso estimulam também o organismo a produzir o colágeno na região aonde o fio é aplicado proporcionando assim um aspecto jovem na face."
+        ],
+        "image": "fios-pdo-sm.png"
+    },
+    {
+        "titulo": "Aplicação de BOTOX",
+        "slug": "aplicacao-de-botox",
+        "content": [
+            "Tratamento que tem a função de tratar as rugas dinâmicas do rosto que surge todas as vezes que fazemos uma expressão facial, nesse caso o mecanismo do tratamento é baseado na paralisação do músculo que quando se move surge na face as linhas de expressão tipo os pés de galinha em volta do olho e as linhas da testa."
+        ],
+        "image": "aplicacao-de-botox-sm.jpg"
+    },
+    {
+        "titulo": "Preenchimento facial",
+        "slug": "preenchimento-facial",
+        "content": [
+            "O preenchimento facial é realizado através da aplicação com ácido hialurônico um componente modelador e biocompatível que penetram na camada profunda da pele o que hidrata, corrigir, ajuda a suavizar as rugas de expressões do rosto é utilizado também para dar volume a determinadas regiões."
+        ],
+        "image": "preenchimento-facial-sm.jpg"
+    },
+    {
+        "titulo": "SKINBOOSTER",
+        "slug": "skin-booster",
+        "content": [
+            "O skin booster é um Procedimento estético com complexo vitamínico e ácido hialurônico injetável que hidrata e trata profundamente a pele, proporcionando um resultado muito superior aos cremes noturnos."
+        ],
+        "image":"skinbooster-sm.png"
+    },
+    {
+        "titulo": "Sculptra/ácido POLI-L-LATICO",
+        "slug": "sculptra-acido-poli-l-latico",
+        "content":[
+            "O ÁCIDO POLI L LÁTICO TAMBÉM CONHECIDO COMO SCULPTRA, é um bioestimulador de colageno, é feito a sua aplicação em camadas mais profundas na face que tem a função de rejuvenescimento tratando as rugas, flacidez e linhas de expressão."
+        ],
+        "image":"sculptra-sm.jpg"
+    }
+]
