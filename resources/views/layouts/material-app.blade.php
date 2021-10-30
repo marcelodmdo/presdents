@@ -81,7 +81,6 @@
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('home') }}">Home</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('tratamentos') }}">Tratamentos</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('about') }}">Quem somos</a>
-            <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('institutional') }}">Institucional</a> -->
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('materiais') }}">Materiais</a>
             <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('agendamentos') }}">Agendamentos</a> -->
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('contato') }}">Contato</a>
@@ -114,7 +113,6 @@
         <a class="mdl-navigation__link" href="{{ route('home') }}">Home</a>
         <a class="mdl-navigation__link" href="{{ route('tratamentos') }}">Tratamentos</a>
         <a class="mdl-navigation__link" href="{{ route('about') }}">Quem somos</a>
-        <!-- <a class="mdl-navigation__link" href="{{ route('institutional') }}">Institucional</a> -->
         <a class="mdl-navigation__link" href="{{ route('materiais') }}">Materiais</a>
         <!-- <a class="mdl-navigation__link" href="{{ route('agendamentos') }}">Agendamentos</a> -->
         <a class="mdl-navigation__link" href="{{ route('contato') }}">Contato</a>
