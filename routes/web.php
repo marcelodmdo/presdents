@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', 'PageController@index')->name('home');
 
-Route::get('/tratamentos', 'PageController@tratamentos')->name('tratamentos');
+// Route::get('/tratamentos', 'PageController@tratamentos')->name('tratamentos');
 
 Route::get('/quem-somos', 'PageController@about')->name('about');
 

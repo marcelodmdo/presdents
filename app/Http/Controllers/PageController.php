@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Mail\Contato;
-use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -24,6 +23,10 @@ class PageController extends Controller
     public function agendamentos()
     {
         return view("agendamentos");
+    }
+    public function contato()
+    {
+        return view("contato");
     }
     public function agendar()
     {
