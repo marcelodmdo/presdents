@@ -12,10 +12,10 @@ class PageController extends Controller
     {
         return view("home");
     }
-    public function tratamentos()
-    {
-        return view("tratamentos");
-    }
+    // public function tratamentos()
+    // {
+    //     return view("tratamentos");
+    // }
     public function about()
     {
         return view("about");

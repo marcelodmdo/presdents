@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 class TratamentosController extends Controller
 {
     public function createCollection($c, Array $args = []) {
-        $coll = json_decode(file_get_contents("public/tratamentos/".$c.".json"), true);
+        $coll = json_decode(file_get_contents("public/content/".$c.".json"), true);
         $nT = array();
         foreach($coll as $t) {
             if(isset($t["content"])) {
