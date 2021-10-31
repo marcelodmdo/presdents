@@ -41,7 +41,7 @@ class TratamentosController extends Controller
         $coll = array_map($func, $nT);
         
 
-        $coll = collect($coll)->sortBy('slug');
+        $coll = collect($coll)->sortBy('slug')->values();
         if(!empty($args)) {
             if(isset($args["all"])) {
 
@@ -72,15 +72,40 @@ class TratamentosController extends Controller
     }
     public function sideList($collect, $opts) {
         $list = [];
-        foreach($collect as $c) {
+        $ref = null;
+        $total = count($collect);
+        
+        foreach($collect as $i => $c) {
             // print_r($c);
             if($c["slug"] === $opts["except"]) {
-                
+                $ref = $i;
                 continue;
             }
             $list[] = $c;
         }
-        $list = collect($list)->take($opts["take"]);
+        
+        // $list = collect($list)->slice($ref, $opts["take"]);
+        // echo $total;
+        // echo $opts["take"];
+        $list__ = collect($list)->slice($ref, $opts["take"])->all();
+        $list_ = [];
+        $c = count($list__);
+        
+        // print_r($list__);
+        if($c < $opts["take"]) {
+            $add = [];
+            $d = $opts["take"] - $c;
+            while($c < $opts["take"]) {
+                $c++;
+            }
+            // echo "resto" . ($c - $total);
+            $list_ = collect($list)->slice(0, $d);
+            // echo "Menor".$c;
+            // echo count($list_);
+            
+        } 
+        $list = collect($list__)->merge($list_);
+        // print_r($list_);
         return $list;
     }
     public function index()
