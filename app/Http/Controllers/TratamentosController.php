@@ -13,6 +13,7 @@ class TratamentosController extends Controller
         $coll = json_decode(file_get_contents("public/content/".$c.".json"), true);
         $nT = array();
         foreach($coll as $t) {
+            $t["tipo"] = $c;
             if(isset($t["content"])) {
                 $nT[] = $t;
             }
@@ -40,8 +41,23 @@ class TratamentosController extends Controller
         
         $coll = array_map($func, $nT);
         
-
-        $coll = collect($coll)->sortBy('slug')->values();
+        if(isset($args["random"])) {
+            $coll = collect($coll)->random($args["take"]);
+        } else {
+            $coll = collect($coll)->sortBy('slug')->values();
+        }
+        if(isset($args["except"])) {
+            $list = [];
+            foreach($coll as $i => $c) {
+                // print_r($c);
+                if( in_array($c["slug"], $args["except"])) {
+                    continue;
+                }
+                $list[] = $c;
+            }
+            $coll = collect($list);
+        }
+        
         if(!empty($args)) {
             if(isset($args["all"])) {
 
