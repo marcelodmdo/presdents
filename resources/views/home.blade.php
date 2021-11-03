@@ -319,7 +319,7 @@
             <p class="" style="padding-top: 0px; color: #45ACFF">
               CRO: MG46761
               <br>
-              CRO da Clínica: 00000000
+              CRO da Clínica: 8005
             </p>  
             <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect agendar-btn1-link" href="{{ route('agendar') }}" target="_blank">
               Agendar avaliação&nbsp;<i class="material-icons">chevron_right</i>

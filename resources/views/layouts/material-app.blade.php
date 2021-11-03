@@ -258,6 +258,31 @@
 
       </footer>
     </div>
+    <style>
+      
+      .floating-btn img {
+        width: 100%
+      }
+      .floating-btn a {
+        /* background-color: #0d8706; */
+        color: #fff;
+        
+      }
+      .floating-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        width: 60px;
+        z-index: 80
+      }
+    </style>
+    <div class="floating-btn">
+      <!-- Colored FAB button -->
+      <a href="https://api.whatsapp.com/send?phone=5531996163022&text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20os%20seus%20servi%C3%A7os."
+        target="_blank">
+        <img class="whatsapp-icon" src="{{ url('public/images/whatsapp-icon.png') }}" />
+      </a>
+    </div>
   </div>
   
   <script src="{{ url('public/mdl/material.min.js') }}"></script>
