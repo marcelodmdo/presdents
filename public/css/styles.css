@@ -86,8 +86,60 @@ a img{
     color: #757575;
     font-weight: 700;
     font-size: 14px;
+    padding: 0 16px !important;
   }
-
+  
+  .top-agendar.show span {
+    max-width: 200px;
+    transition: all 0.2s ease-in-out;
+    background-color: #308ac9;
+    color: #fff;
+    /* width: 164px; */
+    height: 36px;
+    min-width: 0px;
+    
+    opacity: 1;
+    font-size: 14px;
+  }
+  .top-agendar.show, .top-agendar:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    background-color: #308ac9 !important;
+  }
+  .top-agendar {
+    padding: 0px 10px;
+    border-radius: 35px;
+    border: 0;
+    background-color: #308ac9 !important;
+    transition: all 0.3s ease-out;
+    opacity: 0.75;
+    color: #fff;
+    font-size: 14px;
+  }
+  .top-agendar span {
+    width: 0;
+    padding: 0px;
+    font-size: 0px;
+    height: 0;
+    min-width: 0px;
+    max-width: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  .top-agendar-mobile {
+    max-width: 200px;
+    transition: all 0.2s ease-in-out;
+    padding: 0px 10px !important;
+    background-color: #308ac9;
+    color: #fff;
+    width: 164px;
+    height: 36px;
+    min-width: 0px;
+    max-width: 200px;
+    padding: 0px;
+    border-radius: 35px;
+    opacity: 1;
+    font-size: 14px;
+  }
   .android-navigation-container {
     /* Simple hack to make the overflow happen to the left instead... */
     direction: rtl;
@@ -868,16 +920,43 @@ hr {
     /* border-radius: 0; */
     width: 96vw;
   }
+  .android-mobile-title .top-agendar-mobile{
+    display: none;
+  }
+  .android-mobile-title {
+    left: calc(50% - 70px) !important;
+  }
+  .mdl-layout__drawer.is-visible {
+    width: 70vw;
+  }
+  .mdl-layout__drawer.is-visible nav.mdl-navigation {
+    align-items: center !important;
+  }
 
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .custom-header-section .custom-header-style1 .content-custom-header-section .content-box h4 {
     font-size: 2.3rem;
   }
+  
+  .mdl-layout__drawer.is-visible {
+    width: 50vw;
+  }
+  .mdl-layout__drawer.is-visible nav.mdl-navigation {
+    align-items: center !important;
+  }
 }
 @media (min-width: 769px) and (max-width: 900px) {
   .custom-header-section .custom-header-style1 .content-custom-header-section .content-box h4 {
     font-size: 2.4rem;
+  }
+}
+@media (min-width: 900px) {
+  .mdl-layout__drawer.is-visible {
+    width: 30vw;
+  }
+  .mdl-layout__drawer.is-visible nav.mdl-navigation {
+    align-items: center !important;
   }
 }
 
@@ -898,7 +977,7 @@ hr {
   .android-mobile-title {
     display: block !important;
     position: absolute;
-    left: calc(50% - 70px);
+    left: calc(50% - 150px);
     top: 12px;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }

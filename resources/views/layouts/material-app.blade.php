@@ -87,10 +87,16 @@
             <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a> -->
+            <a  href="{{ route('agendar') }}" target="_blank" class="top-agendar mdl-button mdl-js-button">
+                AGENDAR <span>AVALIAÇÃO</span>
+            </a>
           </nav>
         </div>
         <span class="android-mobile-title mdl-layout-title">
           <img class="android-logo-image" src="{{ url('public/images/presdents/logo-v2.png') }}">
+          <a  href="{{ route('agendar') }}" target="_blank" class="top-agendar-mobile mdl-button mdl-js-button">
+            AGENDAR AVALIAÇÃO
+          </a>
         </span>
         <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"
           id="more-button">
@@ -135,10 +141,13 @@
         <a class="mdl-navigation__link" href="">App developer resources</a>
         <a class="mdl-navigation__link" href="">Android Open Source Project</a>
         <a class="mdl-navigation__link" href="">Android SDK</a> -->
+        <a  href="{{ route('agendar') }}" target="_blank" class="top-agendar-mobile mdl-button mdl-js-button">
+            AGENDAR AVALIAÇÃO
+        </a>
       </nav>
     </div>
 
-    <div class="android-content mdl-layout__content">
+    <div class="header-ref android-content mdl-layout__content">
 
       @yield('content')
       <footer class="presdents-footer--container mdl-grid">
@@ -298,6 +307,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{{ url('public/js/custom.js') }}"></script>
   <script type="text/javascript">
       // var windowObjectReference;
       // var windowFeatures = "resizable=yes,scrollbars=yes,status=yes,width=800,height=100";

@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<a name="top"></a>
+<a class="top-ref" name="top"></a>
 <!-- <div class="android-be-together-section mdl-typography--text-center">
           <div class="logo-font android-slogan">be together. not the same.</div>
           <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>

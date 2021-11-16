@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-  <a name="top"></a>
+  <a class="top-ref" name="top"></a>
   
 <div id="message"></div>
 <!-- <div id="target-container">Target</div> -->

@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<a name="top"></a>
+<a class="top-ref" name="top"></a>
 <!-- <div class="android-be-together-section mdl-typography--text-center">
           <div class="logo-font android-slogan">be together. not the same.</div>
           <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
@@ -369,16 +369,23 @@
                         </div>
                         <div class="mdl-card__supporting-text">
                             <span
-                                class="mdl-typography--font-light mdl-typography--subhead mdl-typography--text-center">Texto
-                                exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo </span>
+                                class="mdl-typography--font-light mdl-typography--subhead mdl-typography--text-center">
+                                Conheça mais sobre nossos tratamentos. Agende sua avaliação.
+                            </span>
+                            <hr>
+                            <a class="mdl-button mdl-js-button mdl-typography--text-uppercase"
+                                href="{{ route('agendar') }}" target="_blank">
+                                Agendar agora
+                                <i class="material-icons">chevron_right</i>
+                            </a>
                         </div>
-                        <div class="mdl-card__actions">
+                        <!-- <div class="mdl-card__actions">
                             <a class="mdl-button mdl-js-button mdl-typography--text-uppercase"
                                 href="{{ route('agendar') }}" target="_blank">
                                 Agende agora
                                 <i class="material-icons">chevron_right</i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -726,7 +733,7 @@
                         <i class="material-icons mdl-list__item-avatar">circle</i>
                         <span>Caracterização Dental em Ouro e Metal</span>
                         <span class="mdl-list__item-text-body">
-                            Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo Texto exemplo
+                        São filamentos ou revestimentos feitos em metal, que são adaptadas na face do dente, conforme interesse do paciente.
                         </span>
                     </span>
                     <span class="mdl-list__item-secondary-content">
