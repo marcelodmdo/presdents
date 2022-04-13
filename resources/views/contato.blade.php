@@ -153,8 +153,8 @@
                   <img class="location-icon" src="{{ url('public/images/presdents/location-icon.png') }}" />
                 </div>
                 <div class="mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                  <p class="mdl-typography--headline mdl-typography--font-light">Rua Milton Dias, 371 - Jardim Vitória<br />
-                  Belo Horizonte - Minas Gerais</p>
+                  <p class="mdl-typography--headline mdl-typography--font-light">Rua dos Borges, 1019 - Jardim Vitória<br />
+                  Belo Horizonte - MG<br><span class="mdl-typography--body-2">No estacionamento do Supermercados BH</span></p>
                 </div>
                 
                 

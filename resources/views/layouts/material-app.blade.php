@@ -175,8 +175,9 @@
                 31 9 9616-3022
               </li>
               <li>
-                Rua Milton Dias, 371 - Jardim Vitória <br />
-                Belo Horizonte - Minas Gerais
+                Rua dos Borges, 1019 - Jardim Vitória <br />
+                Belo Horizonte - Minas Gerais<br>
+                <span class="mdl-typography--body-2">No estacionamento do Supermercados BH</span>
               </li>
               <li>
                 Segunda ~ Sábado: 07:00 às 20:00<br>

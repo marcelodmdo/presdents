@@ -199,10 +199,11 @@
     <div class="mdl-grid mdl-typography--font-light">
       <div style="" class="left-side mdl-typography--text-right mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
         <div class="address-street mdl-typography--font-light">
-          Rua Milton Dias, 371 - Jardim Vitória
+          Rua dos Borges, 1019 - Jardim Vitória
         </div>
         <div class="address-street-city mdl-typography--font-light">
-          Belo Horizonte - Minas Gerais
+          Belo Horizonte - MG<br>
+          <span class="mdl-typography--body-2">No estacionamento do Supermercados BH</span>
         </div>
       </div>
       <div style="" class="right-side mdl-typography--text-left mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
